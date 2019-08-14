@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
+import  Joinus from '@/views/Joinus';
 
 export default new Router({
   mode: 'history',
@@ -52,8 +53,14 @@ export default new Router({
     {
       path: '/joinus',
       name: 'joinus',
-      component:  ()=> import('@/views/Joinus')
+      component: Joinus
     },
+    {
+      path:"**",
+      redirect:{
+        name:"home"
+      }
+    }
     // {
     //   path: '/about',
     //   name: 'about',

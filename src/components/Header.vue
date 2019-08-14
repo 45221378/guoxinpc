@@ -96,8 +96,14 @@
 			}
 		},
 		mounted(){
-			let headerPath = this.$route;
-			console.log(headerPath);
+
 		},
 	}
 </script>
+
+<style scoped>
+.router-link-exact-active span{
+	color:red !important;
+}
+</style>
+

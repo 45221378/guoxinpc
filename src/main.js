@@ -10,10 +10,10 @@ import "@/css/common.css";
 import "@/css/reset.css";
 
 // 引入vue-amap
-// import AMap from 'vue-amap';
-// Vue.use(AMap);
+import AMap from 'vue-amap';
+Vue.use(AMap);
 
-// // 初始化vue-amap
+// // // 初始化  vue-amap
 // AMap.initAMapApiLoader({
 //   // 高德的key
 //   key: 'b509ac189c80b53d5d981a89f458f2fc',
@@ -21,8 +21,17 @@ import "@/css/reset.css";
 //   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
 // });
 
+import '@babel/polyfill'
+import 'babel-polyfill'
+import "polyfill";
+
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  watch:{
+    '$route':function(to,from){
+      console.log(to.name);
+    }
+  }
 }).$mount('#app')
