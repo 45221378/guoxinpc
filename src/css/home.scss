@@ -1,0 +1,172 @@
+#home{
+  position: relative;
+      .h-banner{
+        width: 100%;
+        height: 900px;
+        margin-bottom: 78px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+  
+      .detail{
+        h5{
+          text-align: center;
+          font-size: 27px;
+          font-weight: bold;
+          color: #000;
+        }
+        .trait-detail{
+          text-align: center;
+          font-size: 16px;
+          color: #595757;
+          padding-top: 32px;
+        }
+        .bgf5{
+          width: 100%;
+          height: 239px;
+          background: #eee;
+          &-three{
+            padding-top: 80px;
+            width: 1136px;
+            margin: 0 auto;
+            li{
+              float: left;
+              img{
+                float: left;
+                margin-right: 20px;
+              }
+              div{
+                float: left;
+                i{
+                  width:56px;
+                  height:1px;
+                  border:3px solid rgba(37,162,212,1);
+                  display: block;
+                  margin: 8px 0 7px 0;
+                }
+                p{
+                  max-width: 300px;
+                }
+              }
+            }
+          }
+        }
+        li:nth-child(2){
+          margin: 0 35px 0 50px;
+        }
+      }
+    
+      
+      .margin112{
+          margin: 112px 0 57px 0;
+        }
+      .news{
+        width: 1191px;
+        margin: 0 auto 109px;
+        .img-left{
+          float: left;
+          width: 508px;
+          img{
+            width: 508px;
+          }
+          .img-p1{
+            font-size: 16px;
+            color: #535353;
+            margin: 26px 0 13px 0;
+          }
+          .img-p2{
+            font-size: 16px;
+            color: #a0a0a0;
+          }
+        }
+        .contain-right{
+          float: left;
+          width: 621px;
+          border-bottom: 1px solid #b5b5b5;
+          margin-left: 62px;
+          ul{
+            li{
+              .news-left{
+                float: left;
+                width: 70px;
+                height: 100%;
+                .day{
+                  display: block;
+                  width:62px;
+                  height:71px;
+                  font-size:60px;
+                  font-family: 'MicrosoftYaHei';
+                  font-weight:400;
+                  color:rgba(181,181,181,1);
+                  text-align: center;
+                }
+              }
+              .news-rigth{
+                margin-left: 20px;
+                float:right;
+                .news-p1{
+                  font-size: 16px;
+                  color: #535353;
+                  margin-bottom: 13px;
+                }
+                .news-p2{
+                  font-size: 16px;
+                  color: #a0a0a0;
+                  width: 504px;
+                  line-height: 25px;
+                  margin-bottom: 19px;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .solve{
+        background-image: url(../img/index/blue-bg.png) ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 712px;
+        width:100%;
+        .solve-main{
+          width: 1382px;
+          margin: 0 auto;
+          height: 100%;
+          img{
+            float: left;
+            width: 972px;
+            height: 731px;
+            margin-top: 30px;
+          }
+          .solve-detail{
+            float: left;
+            color: #fff;
+            width: 347px;
+            margin-left: -63px;
+            h6{
+              font-size: 27px;
+              color: #fff;
+              margin: 210px 0 10px 0;
+            }
+            i{
+              width: 63px;
+              height: 2px;
+              background: #fff;
+              margin: 35px 0;
+              border:1px solid rgba(243,247,249,1);
+              display: block;
+            }
+            p{
+              font-size: 16px;
+              color: #fff;
+  
+            }
+          }
+        }
+        
+      }
+    }
+  
+  

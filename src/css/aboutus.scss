@@ -1,0 +1,29 @@
+.aboutus{
+  width: 1240px;
+  margin: 78px auto 80px;
+  .list-introduce{
+    float: left;
+    width: 602px;
+    padding: 95px 0 0 64px;
+    h6{
+      font-size: 27px;
+      font-weight: 600;
+      color: #000;
+    }
+    p{
+      font-size: 16px;
+      color: #595757;
+      padding-top: 33px;
+      width: 430px;
+    }
+  }
+  .list-img{
+    float: right;
+    width: 602px;
+    height: 662px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

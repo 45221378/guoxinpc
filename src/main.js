@@ -5,6 +5,22 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import "@/css/base.css";
+import "@/css/common.css";
+import "@/css/reset.css";
+
+// 引入vue-amap
+// import AMap from 'vue-amap';
+// Vue.use(AMap);
+
+// // 初始化vue-amap
+// AMap.initAMapApiLoader({
+//   // 高德的key
+//   key: 'b509ac189c80b53d5d981a89f458f2fc',
+//   // 插件集合 （插件按需引入）
+//   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
+// });
+
 new Vue({
   router,
   store,
