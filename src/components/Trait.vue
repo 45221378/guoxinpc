@@ -3,9 +3,9 @@
   <section class="trait about">
         <div class="h5-title">
             <div class="content-title">
-                <i></i>
+                <i v-if="this.path"></i>
                 <h5>我们的特点</h5>
-                <i></i>
+                <i v-if="this.path"></i>
             </div>
         </div>
         <p class="trait-detail">系统融合\业务闭环\数据跟踪\分析支撑</p>
@@ -78,3 +78,22 @@
   @import "../css/trait.scss";
   @import "../css/about.scss";
 </style>
+
+<script>
+export default {
+    data(){
+        return{
+            path:true
+        }
+    },
+    mounted(){
+        let routerPath = this.$route.name;
+        console.log(routerPath)
+        if(routerPath=='home'){
+            this.path =false
+        }else{
+            this.path =true
+        }
+    }
+}
+</script>

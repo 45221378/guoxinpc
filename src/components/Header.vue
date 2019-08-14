@@ -84,7 +84,20 @@
     </div>
 </template>
 
-
 <style scoped lang="scss">
   @import "../css/header.scss";
 </style>
+
+<script>
+	export default{
+		data(){
+			return{
+				headerBlue: 1,
+			}
+		},
+		mounted(){
+			let headerPath = this.$route;
+			console.log(headerPath);
+		},
+	}
+</script>

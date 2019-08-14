@@ -1,10 +1,46 @@
 .aboutus{
   width: 1240px;
   margin: 78px auto 80px;
+  .none{
+    display: none;
+
+  }
+  .start{
+    .left{
+      width: 3px;
+      height: 206px;
+      position: absolute;
+      left: 30px;
+      top: 0 
+    }
+    .top{
+      width: 206px;
+      height: 3px;
+      position: absolute;
+      top: 50px ;
+      left: 0px;
+    }
+    .right{
+      width: 3px;
+      height: 206px;
+      position: absolute;
+      right: 30px;
+      bottom: 0 
+    }
+    .bottom{
+      width: 206px;
+      height: 3px;
+      position: absolute;
+      bottom: 50px ;
+      right: 0px;
+    }
+  }
   .list-introduce{
     float: left;
     width: 602px;
+    height: 662px;
     padding: 95px 0 0 64px;
+    position: relative;
     h6{
       font-size: 27px;
       font-weight: 600;
@@ -15,6 +51,37 @@
       color: #595757;
       padding-top: 33px;
       width: 430px;
+    }
+    i{
+      background: #139AD0;
+    }
+    .left{
+      width: 3px;
+      height: 206px;
+      position: absolute;
+      left: 30px;
+      top: 0 
+    }
+    .top{
+      width: 206px;
+      height: 3px;
+      position: absolute;
+      top: 50px ;
+      left: 0px;
+    }
+    .right{
+      width: 3px;
+      height: 206px;
+      position: absolute;
+      right: 30px;
+      bottom: 0 
+    }
+    .bottom{
+      width: 206px;
+      height: 3px;
+      position: absolute;
+      bottom: 50px ;
+      right: 0px;
     }
   }
   .list-img{
