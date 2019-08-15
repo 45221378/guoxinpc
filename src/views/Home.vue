@@ -1,12 +1,18 @@
 <template>
   <div id="home">
-    <section class="h-banner">
-        <img src="@/img/index/banner.png" alt="">
+    <section class="h-banner swiper-container">
+        <!-- <img src="@/img/index/banner.png" alt=""> -->
+        <div class="swiper-wrapper">
+            <div v-for='(el,i) in arrItem' v-bind:key="i" class="swiper-slide">
+                <img v-bind:src="el.img" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </section>
     <Aboutus/>
     <section class="solve">
       <div class="solve-main clearfix">
-        <img src="@/img/index//iMac.png" alt="">
+        <img src="@/img/index/iMac.png" alt="">
         <div class="solve-detail">
             <h6>解决方案</h6>
             <p>智慧照明综合管理平台</p>
@@ -19,6 +25,13 @@
     <div class="detail">
       <h5>项目案例</h5>
       <p class="trait-detail">智慧照明综合管理平台解决方案</p>
+      <div class="swiper-containerTwo">
+        <div class="swiper-wrapper">
+            <div v-for='(el,i) in arrItem1' v-bind:key="i" class="swiper-slide">
+                <img v-bind:src="el.img" />
+            </div>
+        </div>
+      </div>
       <section class="bgf5">
         <ul class="bgf5-three clearfix">
             <li>
@@ -78,16 +91,55 @@
 
   import Aboutus from '@/components/Aboutus.vue'
   import Trait from '@/components/Trait.vue'
-  
+  import Swiper from 'swiper'
 export default {
     name: 'home',
+    data(){
+        return{
+            arrItem:[
+                {img:require('@/img/index/banner.png')},
+                {img:require('@/img/banner-concatus.png')},
+                {img:require('@/img/banner-detail.png')},
+                ],
+            arrItem1:[
+            {img:require('@/img/projectCase/swiper1.png')},
+            {img:require('@/img/projectCase/swiper2.png')},
+            {img:require('@/img/projectCase/swiper3.png')},
+            ]
+        }
+    },
     components: {
       Aboutus,
       Trait
+    },
+    methods:{
+        _initSwiper(){
+            let mySwiper = new Swiper('.swiper-container', {
+                loop: true, 
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                observer:true,
+            })
+        },
+        _initSwiperTwo(){
+            let mySwiper = new Swiper('.swiper-containerTwo', {
+                loop: true, 
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                observer:true,
+            })
+        }
+    },
+    mounted(){
+        this._initSwiper();
+        this._initSwiperTwo();
     }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../css/home.scss'
+@import '../css/home.scss';
+@import '../assets/swiper/swiper.min.css';
 </style>

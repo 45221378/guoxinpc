@@ -5,7 +5,7 @@
     <section class="nav">
         <p>
           <span class="active">企业介绍</span>
-          <span>企业文化</span>
+          <span @click="gowenhua">企业文化</span>
         </p>
     </section>
     <Aboutus/>
@@ -108,6 +108,28 @@
     name: "about",
     components: {
       Aboutus
+    },
+    data(){
+      return{
+        mId:''
+      }
+    },
+    watch:{
+
+    },
+    mounted(){
+      let mId = this.$route.query.mId;
+      console.log(mId);
+      console.log(document.documentElement.scrollTop);
+
+      if(mId==2){
+        document.documentElement.scrollTop = 2200;
+      }
+    },
+    methods:{
+      gowenhua(){
+        document.documentElement.scrollTop = 2200;
+      }
     }
   }
 

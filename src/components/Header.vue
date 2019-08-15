@@ -5,7 +5,7 @@
     	</div>
     
     	<ul class="navbar-nav clearfix">
-    		<li class="nav-item active">
+    		<li class="nav-item">
     			<router-link :to="{name:'home'}" class="nav-item-a">
     				<span class="header-title">首页</span>
     			</router-link>
@@ -17,14 +17,14 @@
           <ol class="show-links">
     				<b class="show-arrow"></b>
     				<li class="link-item">
-    					<a>
+    					<router-link :to="{name:'about',query:{mId:1}}">
     						<span>企业介绍</span>
-    					</a>
+    					</router-link>
     				</li>
     				<li class="link-item">
-    					<a>
+    					<router-link :to="{name:'about',query:{mId:2}}">
     						<span>企业文化</span>
-    					</a>
+    					</router-link>
     				</li>
     			</ol>
         </li>
@@ -101,9 +101,14 @@
 	}
 </script>
 
-<style scoped>
-.router-link-exact-active span{
-	color:red !important;
-}
+<style scoped lang="scss">
+// .router-link-exact-active{
+// 	border-bottom: 2px solid #139ad0;
+// 	display: block;
+// 	span{
+// 		color:#1AB1ED !important;
+// 	}
+// }
+    
 </style>
 

@@ -1,3 +1,35 @@
+.fade-top {
+  -webkit-animation: fadeTop 0.5s linear both;
+  -moz-animation: fadeTop 0.5s linear both;
+  -ms-animation: fadeTop 0.5s linear both;
+  -o-animation: fadeTop 0.5s linear both;
+  animation: fadeTop 0.5s linear both; }
+
+@-webkit-keyframes fadeTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px); } }
+
+@-moz-keyframes fadeTop {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(-20px); } }
+
+@keyframes fadeTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0); }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px); } }
+
+
 .xmal{
   .case{
     padding: 76px 0 80px 0;
@@ -13,6 +45,27 @@
       p{
         font-size: 16px;
         color: #313131;
+      }
+    }
+    .xmal-img{
+      display: flex;
+      justify-content: center;
+      width: 1220px;
+      height: 100%;
+      margin: 0 auto;
+      margin: 70px auto 0 ;
+      li{
+        width: 390px;
+        margin: 0 8px;
+        &:hover{
+          @extend .fade-top;
+        }
+        p{
+          margin-top: 34px;
+          text-align: center;
+          font-size:16px;
+          color: #1AB1ED;
+        }
       }
     }
   }

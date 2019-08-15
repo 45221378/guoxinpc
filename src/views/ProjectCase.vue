@@ -12,7 +12,20 @@
           <h6>武汉市路灯管理服务中心</h6>
           <p>智慧照明综合管理平台是国信天宇针对当前武汉市路灯管理服务中心道路照明面临的外部市场竞争激烈、服务要求提升；内部管理模式落后、“四大系统”数据割裂、人员匮乏老化等问题，定制设计出的一套城市道路照明综合管理系统，可以PC端、移动APP端、微信界面等形式呈现，包含但不限于GIS平台、监控平台、生产系统、工程系统、物料管理、档案系统、智慧灯杆、财务管理等功能，以及后期基于平台内的数据服务与支持运用云计算、AI智能等技术形成的可视化办公、智能化决策体系。</p>
         </div>
-
+        <ul class="xmal-img">
+          <li>
+            <img src="@/img/projectCase/swiper1.png" />
+            <p>智慧照明综合管理平台登录界面</p>
+          </li>
+          <li>
+            <img src="@/img/projectCase/swiper2.png" />
+            <p>智慧照明综合管理功能操作平台</p>
+          </li>
+          <li>
+            <img src="@/img/projectCase/swiper3.png" />
+            <p>智慧照明平台应用管理页面</p>
+          </li>
+        </ul>
       </div>
     </section>
     <img class="echart" src="@/img/projectCase/echart.png" alt="">

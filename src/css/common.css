@@ -25,6 +25,62 @@ img {
   opacity: 0;
   opacity: 1 \9; }
 
+@media screen and (min-width:960px) and (max-width:1100px){
+  .h-banner{
+    width: 100%;
+    height: 515px !important; 
+  }
+  .about .banner-us{
+    width: 100%;
+    height: 257px !important; 
+  }
+}
+
+@media screen and (min-width:1100px) and (max-width:1400px){
+  .h-banner{
+    width: 100%;
+    height: 656px !important; 
+  }
+  .about .banner-us{
+    width: 100%;
+    height: 328px !important; 
+  }
+}
+
+@media screen and (min-width:1400px) and (max-width:1600px){
+  .h-banner{
+    width: 100%;
+    height: 750px !important; 
+  }
+  .about .banner-us{
+    width: 100%;
+    height: 375px !important; 
+  }
+}
+
+@media screen and (min-width:1600px) and (max-width:1800px){
+  .h-banner{
+    width: 100%;
+    height: 844px !important; 
+  }
+  .about .banner-us{
+    width: 100%;
+    height: 422px !important; 
+  }
+}
+
+@media screen and (min-width:1800px) and (max-width:2000px){
+  .h-banner{
+    width: 100%;
+    height: 937px !important; 
+  }
+  .about .banner-us{
+    width: 100%;
+    height: 468px !important; 
+  }
+}
+
+
 .fade-in-up {
   -webkit-animation: fadeInUp 0.5s linear both;
   -moz-animation: fadeInUp 0.5s linear both;

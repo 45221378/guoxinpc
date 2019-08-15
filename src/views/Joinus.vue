@@ -83,7 +83,7 @@ export default {
       marker:{
         position:[114.274503,30.598135],
         visible:true,
-        icon:require("@/img/area.png")        
+        icon:require("@/img/red-area.png")        
       },
       plugin: [{
           enableHighAccuracy: true,//是否使用高精度定位，默认:true

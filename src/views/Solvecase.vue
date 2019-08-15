@@ -4,8 +4,8 @@
     <section class="nav">
         <p>
           <span class="active">智慧照明综合管理平台</span>
-          <span>智慧灯杆</span>
-          <span>产品选型</span>
+          <span @click="godenggan">智慧灯杆</span>
+          <span @click="gocpxx">产品选型</span>
         </p>
     </section>
     <section class="solvecase h5-title">
@@ -33,9 +33,36 @@
           <i></i>
         </div>
         <div class="show-img">
-          <img src="@/img/solvecase/pcsink.png" alt="">
-          <img src="@/img/solvecase/white.png" alt="">
-          <img src="@/img/solvecase/five.png" alt="">
+          <ul>
+            <li>
+              <img src="@/img/solvecase/pcsink.png" alt="">
+              <div class="img-content">
+                <h6>平台化思想</h6>
+                <p class="p1">高度融合的</p>
+                <p class="p1">平台化思想</p>
+              </div>
+            </li>
+            <li>
+              <img src="@/img/solvecase/white.png" alt="">
+              <div class="img-content">
+                <h6>建设设计理念</h6>
+                <p class="p1">全域资产数字化</p>
+                <p class="p1">业务财务一体化</p>
+
+              </div>
+            </li>
+            <li>
+              <img src="@/img/solvecase/five.png" alt="">
+              <div class="img-content">
+                <h6>五大核心能力</h6>
+                <p class="p3">高度灵活的链接能力、</p>
+                <p class="p3">扩展及弹性能力、</p>
+                <p class="p3">业务支撑能力、</p>
+                <p class="p3">设计极简能力、</p>
+                <p class="p3">保障能力</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section> 
       <Trait/>
@@ -58,16 +85,43 @@
         </div>
         <ul class="ptgh-ul">
           <li>
-            <img src="@/img/solvecase/jiantou1.png" alt="">
-            <p>核心业务平台化</p>
+            <img class="img" src="@/img/solvecase/jiantou1.png" alt="">
+            <p class="p-1">核心业务平台化</p>
+
+            <div class="hover">
+              <img class="img-hover" src="@/img/solvecase/jiantou1-1.png" alt="">
+              <h6>核心业务平台化</h6>
+              <i></i>
+              <p class="p-2">V1.0 通过GIS+监控，将路灯基本信息以及数据采集与控制、告警智能化</p>
+              <p class="p-2">V2.0 将生产办公系统加入智慧平台，实现监控与生产系统智能化，APP功能实现</p>
+            </div>
           </li>
           <li>
-            <img src="@/img/solvecase/jiantou2.png" alt="">
-            <p>管理数据智能化</p>
+            <img class="img"  src="@/img/solvecase/jiantou2.png" alt="">
+            <p class="p-1">管理数据智能化</p>
+
+            <div class="hover">
+              <img class="img-hover" src="@/img/solvecase/jiantou2-2.png" alt="">
+              <h6>管理数据智能化</h6>
+              <i></i>
+              <p class="p-2">工程系统、物料系统</p>
+              <p class="p-2">档案系统接入平台</p>
+              <p class="p-2">数据建模、采集、业务分析</p>
+            </div>
+
           </li>
           <li>
-            <img src="@/img/solvecase/jiantou3.png" alt="">
-            <p>决策智能化</p>
+            <img class="img"  src="@/img/solvecase/jiantou3.png" alt="">
+            <p class="p-1">决策智能化</p>
+
+            <div class="hover">
+              <img class="img-hover" src="@/img/solvecase/jiantou3-3.png" alt="">
+              <h6>决策智能化</h6>
+              <i></i>
+              <p class="p-2">整合各系统数据与信息</p>
+              <p class="p-2">数据训练、深度学习</p>
+              <p class="p-2">实际问题预测、智能决策</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -78,27 +132,27 @@
           <i></i>
         </div>
         <ul class="mbxg-wenzi">
-          <li class="mgt155">
+          <li class="mgt155 fade-in-up">
             <h6>业务渠道多样化</h6>
             <span>智能硬件开放平台 </span>
             <span>“物-物”互联</span>
             <span>“人-物”互联 </span>
             <span>标杆领军地位</span>
           </li>
-          <li class="mgt126">
+          <li class="mgt126 fade-in-up">
             <h6>管理手段丰富化</h6>
             <span>强化措施</span>
             <span>丰富手段</span>
             <span>扁平化 </span>
             <span>碎片化管理</span>
           </li>
-          <li class="mgt98">
+          <li class="mgt98 fade-in-up">
             <h6>业务办公移动化</h6>
             <span>智慧政府办公平台</span>
             <span>随时随地交流互动</span>
             <span>摆脱时间和场所局限</span>
           </li>
-          <li class="mgt70">
+          <li class="mgt70 fade-in-up">
             <h6>业务数据一体化</h6>
             <span>打通“数据孤岛”</span>
             <span>数据集中和共享</span>
@@ -224,6 +278,21 @@ export default {
   name: 'solvecase',
   components: {
     Trait
+  },
+  mounted(){
+    // window.addEventListener('scroll',this.scroll,false);
+  },
+  methods:{
+    // scroll(){
+    //   // console.log(document.documentElement.scrollHeight);
+    //   console.log(window.scrollY);
+    // },
+    godenggan(){
+      document.documentElement.scrollTop = 4714;
+    },
+    gocpxx(){
+      document.documentElement.scrollTop = 6630;
+    }
   }
 }
 </script>

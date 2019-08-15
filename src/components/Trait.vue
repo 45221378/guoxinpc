@@ -88,7 +88,6 @@ export default {
     },
     mounted(){
         let routerPath = this.$route.name;
-        console.log(routerPath)
         if(routerPath=='home'){
             this.path =false
         }else{
