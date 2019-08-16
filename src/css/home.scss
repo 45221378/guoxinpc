@@ -20,12 +20,13 @@
           text-align: center;
           font-size: 16px;
           color: #595757;
-          padding-top: 32px;
+          padding: 32px 0 80px 0;
         }
-        .bgf5{
+        .think{
           width: 100%;
           height: 239px;
           background: #eee;
+          margin-top: 137px;
           &-three{
             padding-top: 80px;
             width: 1136px;
@@ -168,7 +169,90 @@
     }
   
   
+// .scale-swiper{
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   overflow: hidden;
+//   .swiper-containerTwo{
+//      width: 2000px;
+//     .swiper-wrapper{
+//       .swiper-slide{
+//         margin-left: -300px;
+//         height: 374px;
+//         transition: 300ms;
+//         transform: scale(0.8);
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         background-position: left center;
+//         img{
+          
+//           transition: 300ms;
+//           transform: scale(0.8);
+//         }
+//       }
+//       .swiper-slide-active,.swiper-slide-duplicate-active{
+//         z-index: 9999;
+//         transition: 300ms;
+  
+//         transform: scale(1);
+//         img{
+//           transition: 300ms;
+//           transform: scale(1);
+//         }
+//       }
+//     }   
+//   }
+// }
 
 
+.scale-swiper{
+  max-width: 1000px;
+  height: 347px;
+  margin: 0 auto;
+  overflow: hidden;
+  .swiper-containerTwo {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+	  transition: 300ms;
+    transform: scale(0.8);
+    border: 3px solid #000;
+    }
+	.swiper-slide-active,.swiper-slide-duplicate-active{
+      transform: scale(1);
+      z-index: 9999;
+	}
+}
+
+
+.animation-scaleone {
+  -webkit-animation: scaleOne 0.5s linear both;
+  -moz-animation: scaleOne 0.5s linear both;
+  -ms-animation: scaleOne 0.5s linear both;
+  -o-animation: scaleOne 0.5s linear both;
+  animation: scaleOne 0.5s linear both; }
+
+  @keyframes scaleOne {
+    0% {
+      transform: scaleY(1); }
+    100% {
+      transform: scaleY(1.2); } }
 
     

@@ -25,15 +25,26 @@
     <div class="detail">
       <h5>项目案例</h5>
       <p class="trait-detail">智慧照明综合管理平台解决方案</p>
-      <div class="swiper-containerTwo">
-        <div class="swiper-wrapper">
-            <div v-for='(el,i) in arrItem1' v-bind:key="i" class="swiper-slide">
-                <img v-bind:src="el.img" />
+      <div class="scale-swiper">
+        <div class="swiper-containerTwo" style="width:2000px;">
+            <div class="swiper-wrapper">
+                <!-- <div v-for='(el,i) in arrItem1' :style="{'background-image':'url('+el.img+')'}" v-bind:key="i" class="swiper-slide">
+                </div> -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <!-- <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div> -->
             </div>
         </div>
       </div>
-      <section class="bgf5">
-        <ul class="bgf5-three clearfix">
+      <section class="think">
+        <ul class="think-three clearfix">
             <li>
                 <img src="@/img/index/pc-detail.png" alt="">
                 <div>
@@ -102,9 +113,9 @@ export default {
                 {img:require('@/img/banner-detail.png')},
                 ],
             arrItem1:[
-            {img:require('@/img/projectCase/swiper1.png')},
-            {img:require('@/img/projectCase/swiper2.png')},
-            {img:require('@/img/projectCase/swiper3.png')},
+            {img:require('@/img/index/jiankong.png')},
+            {img:require('@/img/index/login-pc.png')},
+            {img:require('@/img/index/admin-pc.png')},
             ]
         }
     },
@@ -124,11 +135,13 @@ export default {
         },
         _initSwiperTwo(){
             let mySwiper = new Swiper('.swiper-containerTwo', {
-                loop: true, 
+                slidesPerView: 3,
+                centeredSlides: true,
+                loop: true,
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true,
                 },
-                observer:true,
             })
         }
     },

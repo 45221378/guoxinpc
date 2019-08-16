@@ -28,15 +28,15 @@
           </div>
           <div class="form-input clearfix">
             <label class="name">
-              <span>姓名</span><input />
+              <span>姓名</span><input v-model="username" />
             </label>
             <label class="phone">
-              <span>电话</span><input />
+              <span>电话</span><input v-model="userphone" />
             </label>
             <label class="message">
-              <span>留言</span><textarea />
+              <span>留言</span><textarea  v-model="usersay" />
             </label>
-            <button>提交</button>
+            <button @click="gosubmit">提交</button>
           </div>
         </div>
           <div class="address">
@@ -65,6 +65,8 @@
 // // 初始化  vue-amap
 import AMap from 'vue-amap';
 import Vue from "vue"
+import { jounus } from "@/assets/ajax/ajax.js";
+
 Vue.use(AMap);
 AMap.initAMapApiLoader({
   // 高德的key
@@ -76,6 +78,9 @@ export default {
   name: 'test',
   data () {
     return {
+      username:'',
+      userphone:'',
+      usersay:'',
       map: null,
       // amapManager,
       center: [114.274503,30.598135],
@@ -101,17 +106,14 @@ export default {
       }]
     }
   },
-  create () {
-    // let that = this
-    // MapLoader().then(AMap => {
-    //   console.log('地图加载成功')
-    //   that.map = new AMap.Map('container', {
-    //     center: [114.274503,30.598135],
-    //     zoom: 11
-    //   })
-    // }, e => {
-    //   console.log('地图加载失败' ,e)
-    // })
+  methods:{
+    gosubmit(){
+      console.log(this.username)
+      // jounus.then(res=>{
+        // console.log(res);
+      // })
+
+    }
   }
 }
 </script>

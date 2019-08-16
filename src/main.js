@@ -2,8 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import axios from './assets/ajax/ajax'
+Vue.config.productionTp = false
 
-Vue.config.productionTip = false
+
+require("babel-polyfill");
 
 import "@/css/base.css";
 import "@/css/common.css";
@@ -21,9 +24,9 @@ Vue.use(AMap);
 //   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
 // });
 
-import '@babel/polyfill'
-import 'babel-polyfill'
-import "polyfill";
+// import '@babel/polyfill'
+// import 'babel-polyfill'
+// import "polyfill";
 
 new Vue({
   router,

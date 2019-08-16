@@ -122,7 +122,7 @@
       console.log(mId);
       console.log(document.documentElement.scrollTop);
 
-      if(mId==2){
+      if(mId=='qywh'){
         document.documentElement.scrollTop = 2200;
       }
     },

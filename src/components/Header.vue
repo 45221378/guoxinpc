@@ -17,14 +17,10 @@
           <ol class="show-links">
     				<b class="show-arrow"></b>
     				<li class="link-item">
-    					<router-link :to="{name:'about',query:{mId:1}}">
-    						<span>企业介绍</span>
-    					</router-link>
+    						<span @click='goqyjs'>企业介绍</span>
     				</li>
     				<li class="link-item">
-    					<router-link :to="{name:'about',query:{mId:2}}">
-    						<span>企业文化</span>
-    					</router-link>
+    						<span @click='goqywh'>企业文化</span>
     				</li>
     			</ol>
         </li>
@@ -35,19 +31,13 @@
           <ol class="show-links">
     				<b class="show-arrow"></b>
     				<li class="link-item">
-    					<a href="">
-    						<span>智慧照明综合管理平台</span>
-    					</a>
+    						<span @click="gozhzm">智慧照明综合管理平台</span>
             </li>
             <li class="link-item">
-              <a href="">
-                <span>智慧灯杆</span>
-              </a>
+                <span @click="gozhdg">智慧灯杆</span>
             </li>
             <li class="link-item">
-              <a href="">
-                <span>产品选型</span>
-              </a>
+                <span @click="gocpxx">产品选型</span>
             </li>
           </ol>
         </li>
@@ -63,14 +53,10 @@
           <ol class="show-links">
     				<b class="show-arrow"></b>
     				<li class="link-item">
-    					<a href="">
-    						<span>公司新闻</span>
-    					</a>
+    						<span @click="gogsxx">公司新闻</span>
     				</li>
     				<li class="link-item">
-    					<a href="">
-    						<span>行业新闻</span>
-    					</a>
+    						<span @click="gohyxx">行业新闻</span>
             </li>
     			</ol>
         </li>
@@ -96,19 +82,42 @@
 			}
 		},
 		mounted(){
-
+			
 		},
+		methods:{
+			goqyjs(){
+				this.$router.push({path:'about',query:{mId:'qyjs'}})
+			},
+			goqywh(){
+				this.$router.push({path:'about',query:{mId:'qywh'}})
+			},
+			gozhzm(){
+				this.$router.push({path:'solvecase',query:{mId:'zhzm'}})
+			},
+			gozhdg(){
+				this.$router.push({path:'solvecase',query:{mId:'zhdg'}})
+			},
+			gocpxx(){
+				this.$router.push({path:'solvecase',query:{mId:'cpxx'}})
+			},
+			gogsxx(){
+				this.$router.push({path:'news',query:{mId:'gsxx'}})
+			},
+			gohyxx(){
+				this.$router.push({path:'news',query:{mId:'hyxx'}})
+			},
+		}
 	}
 </script>
 
 <style scoped lang="scss">
-// .router-link-exact-active{
-// 	border-bottom: 2px solid #139ad0;
-// 	display: block;
-// 	span{
-// 		color:#1AB1ED !important;
-// 	}
-// }
+.router-link-exact-active{
+	border-bottom: 2px solid #139ad0;
+	display: block;
+	span{
+		color:#1AB1ED !important;
+	}
+}
     
 </style>
 

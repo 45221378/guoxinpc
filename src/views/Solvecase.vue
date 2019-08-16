@@ -281,8 +281,18 @@ export default {
   },
   mounted(){
     // window.addEventListener('scroll',this.scroll,false);
+    let mId = this.$route.query.mId;
+    // console.log(mId);
+    // console.log(document.documentElement.scrollTop);
+
+    if(mId=='zhdg'){
+      document.documentElement.scrollTop = 4714;
+    }else if(mId=='cpxx'){
+      document.documentElement.scrollTop = 6630;
+    }
   },
   methods:{
+
     // scroll(){
     //   // console.log(document.documentElement.scrollHeight);
     //   console.log(window.scrollY);
