@@ -76,6 +76,12 @@ AMap.initAMapApiLoader({
 });
 export default {
   name: 'test',
+  mounted(){
+    // jounus()
+      jounus().then(res=>{
+        console.log(res);
+      })
+  },
   data () {
     return {
       username:'',
@@ -109,10 +115,6 @@ export default {
   methods:{
     gosubmit(){
       console.log(this.username)
-      // jounus.then(res=>{
-        // console.log(res);
-      // })
-
     }
   }
 }

@@ -7,7 +7,7 @@
     <router-view/> -->
     
     <Header/>
-    <router-view/>
+    <router-view  :key="$route.fullPath"/>
     <Footer/>
 
   </div>

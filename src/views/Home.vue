@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <section class="h-banner swiper-container">
+    <section class="h-banner swiper-container" id="swiper-containerOne">
         <!-- <img src="@/img/index/banner.png" alt=""> -->
         <div class="swiper-wrapper">
             <div v-for='(el,i) in arrItem' v-bind:key="i" class="swiper-slide">
@@ -26,22 +26,23 @@
       <h5>项目案例</h5>
       <p class="trait-detail">智慧照明综合管理平台解决方案</p>
       <div class="scale-swiper">
-        <div class="swiper-containerTwo" style="width:2000px;">
+            <SwiperDemo></SwiperDemo>
+        <!-- <div class="swiper-container" id="swiper-containerTwo"  >
             <div class="swiper-wrapper">
-                <!-- <div v-for='(el,i) in arrItem1' :style="{'background-image':'url('+el.img+')'}" v-bind:key="i" class="swiper-slide">
-                </div> -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <!-- <div class="swiper-slide">Slide 4</div>
+                <div v-for='(el,i) in arrItem1' :style="{'background-image':'url('+el.img+')'}" v-bind:key="i" class="swiper-slide">
+                </div>
+                <div class="swiper-slide slide-item">Slide 1</div>
+                <div class="swiper-slide slide-item">Slide 2</div>
+                <div class="swiper-slide slide-item">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
                 <div class="swiper-slide">Slide 5</div>
                 <div class="swiper-slide">Slide 6</div>
                 <div class="swiper-slide">Slide 7</div>
                 <div class="swiper-slide">Slide 8</div>
                 <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div> -->
+                <div class="swiper-slide">Slide 10</div>
             </div>
-        </div>
+        </div> -->
       </div>
       <section class="think">
         <ul class="think-three clearfix">
@@ -103,6 +104,7 @@
   import Aboutus from '@/components/Aboutus.vue'
   import Trait from '@/components/Trait.vue'
   import Swiper from 'swiper'
+  import SwiperDemo from "@/components/swiperDemo.vue"
 export default {
     name: 'home',
     data(){
@@ -121,11 +123,12 @@ export default {
     },
     components: {
       Aboutus,
-      Trait
+      Trait,
+      SwiperDemo
     },
     methods:{
         _initSwiper(){
-            let mySwiper = new Swiper('.swiper-container', {
+            let mySwiper = new Swiper('#swiper-containerOne', {
                 loop: true, 
                 pagination: {
                     el: '.swiper-pagination',
@@ -134,14 +137,10 @@ export default {
             })
         },
         _initSwiperTwo(){
-            let mySwiper = new Swiper('.swiper-containerTwo', {
+            let mySwiper = new Swiper('#swiper-containerTwo', {
                 slidesPerView: 3,
                 centeredSlides: true,
                 loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
             })
         }
     },

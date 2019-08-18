@@ -15,6 +15,11 @@ axios.interceptors.response.use(function(response){
 })
 
 
-export const jounus = ()=>{
-  return axios.post(`https://v1.itooi.cn/netease/mv/top`).then(res=>res.data)
+// export const jounus = ()=>{
+//   return axios.post(`https://v1.itooi.cn/netease/mv/top`).then(res=>res.data)
+// }
+
+
+export async function jounus(){
+  return await axios.post(`https://v1.itooi.cn/netease/mv/top`);
 }

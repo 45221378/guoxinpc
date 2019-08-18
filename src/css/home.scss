@@ -206,18 +206,19 @@
 
 
 .scale-swiper{
-  max-width: 1000px;
-  height: 347px;
-  margin: 0 auto;
-  overflow: hidden;
-  .swiper-containerTwo {
+  // max-width: 1000px;
+  // height: 347px;
+  // margin: 0 auto;
+  // overflow: hidden;
+  #swiper-containerTwo {
     width: 100%;
     height: 100%;
   }
-  .swiper-slide {
+  .slide-item {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    width:50%;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;

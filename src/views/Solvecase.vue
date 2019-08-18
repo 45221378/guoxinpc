@@ -131,28 +131,28 @@
           <h5 class="colorwhite">目标及效果</h5>
           <i></i>
         </div>
-        <ul class="mbxg-wenzi">
-          <li class="mgt155 fade-in-up">
+        <ul class="mbxg-wenzi" id="mbxg-wenzi">
+          <li class="mgt155 " :class="fadeClass">
             <h6>业务渠道多样化</h6>
             <span>智能硬件开放平台 </span>
             <span>“物-物”互联</span>
             <span>“人-物”互联 </span>
             <span>标杆领军地位</span>
           </li>
-          <li class="mgt126 fade-in-up">
+          <li class="mgt126" :class="fadeClass">
             <h6>管理手段丰富化</h6>
             <span>强化措施</span>
             <span>丰富手段</span>
             <span>扁平化 </span>
             <span>碎片化管理</span>
           </li>
-          <li class="mgt98 fade-in-up">
+          <li class="mgt98 " :class="fadeClass">
             <h6>业务办公移动化</h6>
             <span>智慧政府办公平台</span>
             <span>随时随地交流互动</span>
             <span>摆脱时间和场所局限</span>
           </li>
-          <li class="mgt70 fade-in-up">
+          <li class="mgt70 " :class="fadeClass">
             <h6>业务数据一体化</h6>
             <span>打通“数据孤岛”</span>
             <span>数据集中和共享</span>
@@ -279,6 +279,11 @@ export default {
   components: {
     Trait
   },
+  data(){
+    return {
+      fadeClass:""
+    }
+  },
   mounted(){
     // window.addEventListener('scroll',this.scroll,false);
     let mId = this.$route.query.mId;
@@ -290,9 +295,20 @@ export default {
     }else if(mId=='cpxx'){
       document.documentElement.scrollTop = 6630;
     }
+
+    window.addEventListener('scroll', this.handleScroll);
   },
   methods:{
-
+    handleScroll () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || 
+      document.body.scrollTop
+      console.log(scrollTop);
+      if(scrollTop>3200 && scrollTop <  4700){
+        this.fadeClass = 'fade-in-up';
+      }else{
+        this.fadeClass = '';
+      }
+    },
     // scroll(){
     //   // console.log(document.documentElement.scrollHeight);
     //   console.log(window.scrollY);
