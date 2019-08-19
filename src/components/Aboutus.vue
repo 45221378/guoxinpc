@@ -15,7 +15,6 @@
             <i class="start-top"></i>
             <i class="start-right"></i>
             <i class="start-bottom"></i>
-
            
         </div>
         <div class="list-img">
@@ -36,6 +35,7 @@ export default {
         }
     },
     mounted(){
+        // console.log(this.$refs.element.offsetHeight);
         window.addEventListener('scroll',this.aboutusScroll,false);
     },
     destroyed(){
@@ -46,18 +46,18 @@ export default {
             //滑动的距离
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop || 
             document.body.scrollTop;   
+            // console.log(scrollTop);
+
             //底部到顶部的距离，整个页面的高度
             // let $scrollH = document.documentElement.scrollHeight;
             //div距离顶部的高度
             let topHeight = this.$refs.element.offsetHeight ; 
-            console.log(topHeight-scrollTop);
-
+            // console.log(topHeight-scrollTop);
 
             //显示屏的高度
             // let $h = document.documentElement.clientHeight;
 
-            // console.log(scrollTop);
-            if(topHeight-scrollTop<200){
+            if(topHeight-scrollTop<500){
                 this.fadeClass = 'about-animate';
             }
         },

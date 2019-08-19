@@ -6,7 +6,10 @@ body, html {
   color: #7f7f7f;
   font-size: 16px;
   font-family: "MicrosoftYaHeiLight","pingfang sc", "苹方", "microsoft yahei", "微软雅黑";
-  min-width: 960px; }
+  min-width: 1300px; 
+  /* overflow: hidden;
+  overflow-y: scroll; */
+}
 
 @media (max-width: 992px) {
   .map-item a {

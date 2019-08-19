@@ -12,6 +12,15 @@
         .list-img{
           width: 383px;
           height: 304px;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: 100%;
+            transition: all 2s;
+            &:hover{
+              transform: scale(1.1,1.1);
+            }
+          }
         }
         .list-detail{
           padding: 20px 19px; 

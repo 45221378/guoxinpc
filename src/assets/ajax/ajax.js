@@ -23,3 +23,7 @@ axios.interceptors.response.use(function(response){
 export async function jounus(){
   return await axios.post(`https://v1.itooi.cn/netease/mv/top`);
 }
+
+export async function getHomenews(){
+  return await axios.post(`http://192.168.0.103:3000/api/user`);
+}

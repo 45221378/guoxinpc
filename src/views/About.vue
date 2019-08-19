@@ -120,8 +120,14 @@
     mounted(){
       let mId = this.$route.query.mId;
       console.log(mId);
-      console.log(document.documentElement.scrollTop);
-
+      // console.log(document.documentElement.scrollTop);
+      if(!mId){
+        console.log(111);
+        document.documentElement.scrollTop = 0;
+      }
+      if(mId=='qyjs'){
+        document.documentElement.scrollTop = 300;
+      }
       if(mId=='qywh'){
         document.documentElement.scrollTop = 2200;
       }
@@ -136,6 +142,5 @@
 </script>
 
 <style lang="scss" scoped>
-
   @import "../css/about.scss";
 </style>

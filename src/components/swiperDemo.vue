@@ -1,28 +1,34 @@
 <template>
     <div class="swiper-container" id="certify">
         <div class="swiper-wrapper">
-            <div v-for="(item,index) in imgs" :key="index" class="swiper-slide">
-                <img :src="item" alt="" class="c-img" >
+            <div v-for="(item,index) in arr" :key="index" class="swiper-slide">
+                <img v-bind:src="item.img" alt="" class="c-img" >
             </div>
         </div>
     </div>
 </template>
+
 
 <script>
  import Swiper from 'swiper'
 export default {
     data(){
         return {
-            imgs:[
-                "http://zuozhaoxi.com/base/img/1.jpg",
-                "http://zuozhaoxi.com/base/img/2.jpg",
-                "http://zuozhaoxi.com/base/img/3.jpg"
+            arr:[
+                {img:require('@/img/index/jiankong.png')},
+                {img:require('@/img/index/login-pc.png')},
+                {img:require('@/img/index/admin-pc.png')},
             ]
+            
+            // imgs:[
+            //     "require('@/img/index/jiankong.png')",
+            //     "@/img/index/login-pc.png",
+            //     "@/img/index/admin-pc.png"
+            // ]
         }
     },
     mounted(){
         this.$nextTick(()=>{
-            console.log("sss")
             const certifySwiper = new Swiper('#certify', {
                 watchSlidesProgress: true,
                 slidesPerView: 'auto',
@@ -98,7 +104,7 @@ export default {
 	width: 620px;
 	height: 408px;
 	background: #fff;
-	box-shadow: 0 8px 30px #ddd;
+	/* box-shadow: 0 8px 30px #ddd; */
 }
 #certify  .swiper-slide img{
 	display:block;

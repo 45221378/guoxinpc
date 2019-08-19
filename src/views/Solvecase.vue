@@ -294,6 +294,10 @@ export default {
       document.documentElement.scrollTop = 4714;
     }else if(mId=='cpxx'){
       document.documentElement.scrollTop = 6630;
+    }else if(mId=='zhzm'){
+      document.documentElement.scrollTop = 450;
+    }else{
+      document.documentElement.scrollTop = 0;
     }
 
     window.addEventListener('scroll', this.handleScroll,false);

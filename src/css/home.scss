@@ -29,7 +29,7 @@
           margin-top: 137px;
           &-three{
             padding-top: 80px;
-            width: 1136px;
+            width: 1036px;
             margin: 0 auto;
             li{
               float: left;
@@ -51,11 +51,11 @@
                 }
               }
             }
+            li:nth-child(2){
+              margin: 0 35px 0 50px;
+            }
           }
-        }
-        li:nth-child(2){
-          margin: 0 35px 0 50px;
-        }
+        }  
       }
     
       
@@ -84,19 +84,26 @@
         .contain-right{
           float: left;
           width: 621px;
-          border-bottom: 1px solid #b5b5b5;
           margin-left: 62px;
           ul{
+            height: 380px;
+            overflow: hidden;
+            li:first-child{
+              margin-top: 0;
+            }
             li{
+              border-bottom: 1px solid #b5b5b5;
+              margin-top: 50px;    
               .news-left{
                 float: left;
                 width: 70px;
                 height: 100%;
+                margin-top: -16px;
                 .day{
                   display: block;
                   width:62px;
-                  height:71px;
-                  font-size:60px;
+                  height:73px;
+                  font-size:56px;
                   font-family: 'MicrosoftYaHei';
                   font-weight:400;
                   color:rgba(181,181,181,1);
@@ -109,14 +116,19 @@
                 .news-p1{
                   font-size: 16px;
                   color: #535353;
-                  margin-bottom: 13px;
+                  margin: 0 0 6px 0;
                 }
                 .news-p2{
                   font-size: 16px;
                   color: #a0a0a0;
                   width: 504px;
                   line-height: 25px;
-                  margin-bottom: 19px;
+                  margin-bottom: 14px;
+                  overflow:hidden;
+                  text-overflow: ellipsis;
+                  display:-webkit-box;
+                  -webkit-line-clamp:2;
+                  -webkit-box-orient:vertical;
                 }
               }
             }
@@ -128,16 +140,16 @@
         background-image: url(../img/index/blue-bg.png) ;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 712px;
+        height: 519px;
         width:100%;
         .solve-main{
-          width: 1382px;
+          width: 1090px;
           margin: 0 auto;
           height: 100%;
           img{
             float: left;
-            width: 972px;
-            height: 731px;
+            width: 709px;
+            height: 533px;
             margin-top: 30px;
           }
           .solve-detail{
@@ -148,7 +160,7 @@
             h6{
               font-size: 27px;
               color: #fff;
-              margin: 210px 0 10px 0;
+              margin: 150px 0 10px 0;
             }
             i{
               width: 63px;

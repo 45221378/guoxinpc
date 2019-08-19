@@ -10,7 +10,9 @@
     <section class="news-list">
       <ul class="clearfix">
         <li>
-          <img class="list-img" src="@/img/banner-news.png" alt="">
+          <div class="list-img">
+            <img src="@/img/banner-news.png" alt="">
+          </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
             <p class="p1">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路……</p>
@@ -22,7 +24,9 @@
           </div>
         </li>
         <li>
-          <img class="list-img" src="@/img/banner-news.png" alt="">
+          <div class="list-img">
+            <img src="@/img/banner-news.png" alt="">
+          </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
             <p class="p1">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路……</p>
@@ -34,7 +38,9 @@
           </div>
         </li>
         <li>
-          <img class="list-img" src="@/img/banner-news.png" alt="">
+          <div class="list-img">
+            <img src="@/img/banner-news.png" alt="">
+          </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
             <p class="p1">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路……</p>
@@ -62,5 +68,4 @@ export default {
 <style lang="scss" scoped>
    @import '../css/about.scss';
    @import '../css/news.scss';
-
 </style>

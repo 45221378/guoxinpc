@@ -25,7 +25,7 @@ new Vue({
   render: h => h(App),
   watch:{
     '$route':function(to,from){
-      console.log(to.name);
+      // console.log(to.name);
     }
   }
 }).$mount('#app')

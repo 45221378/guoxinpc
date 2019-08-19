@@ -3,19 +3,19 @@
     <div class="common-footer">
         <div class="footer-contain clearfix">
           <div class="footer-left">
-            <a>首页</a>
-            <a>关于我们</a>
-            <a class="co89">企业介绍</a>
-            <a class="co89 mgt19">企业文化</a>
-            <a>解决方案</a>
-            <a class="co89">智慧照明综合管理平台</a>
-            <a class="co89">智慧灯杆</a>
-            <a class="co89 mgt19">产品选型</a>
-            <a>项目案例</a>
-            <a>新闻资讯</a>
-            <a class="co89">公司新闻</a>
-            <a class="co89 mgt19">行业新闻</a>
-            <a>联系我们</a>
+            <a @click="gohome">首页</a>
+            <a @click='goaboutus'>关于我们</a>
+            <a @click='goqyjs' class="co89">企业介绍</a>
+            <a @click='goqywh' class="co89 mgt19" >企业文化</a>
+            <a @click="gosolvecase">解决方案</a>
+            <a @click="gozhzm" class="co89">智慧照明综合管理平台</a>
+            <a @click="gozhdg" class="co89">智慧灯杆</a>
+            <a @click="gocpxx" class="co89 mgt19">产品选型</a>
+            <a @click="goprojectcase">项目案例</a>
+            <a @click="gonews">新闻资讯</a>
+            <a @click="gogsxx" class="co89">公司新闻</a>
+            <a @click="gohyxx" class="co89 mgt19">行业新闻</a>
+            <a @click="gojoinus">联系我们</a>
           </div>
           <div class="footer-right">
             <p class="title-p">合作伙伴</p>
@@ -34,3 +34,48 @@
 <style scoped lang="scss">
   @import "../css/footer.scss";
 </style>
+<script>
+export default {
+  methods:{
+			goqyjs(){
+				this.$router.push({path:'about',query:{mId:'qyjs'}})
+			},
+			goqywh(){
+				this.$router.push({path:'about',query:{mId:'qywh'}})
+			},
+			gozhzm(){
+				this.$router.push({path:'solvecase',query:{mId:'zhzm'}})
+			},
+			gozhdg(){
+				this.$router.push({path:'solvecase',query:{mId:'zhdg'}})
+			},
+			gocpxx(){
+				this.$router.push({path:'solvecase',query:{mId:'cpxx'}})
+			},
+			gogsxx(){
+				this.$router.push({path:'news',query:{mId:'gsxx'}})
+			},
+			gohyxx(){
+				this.$router.push({path:'news',query:{mId:'hyxx'}})
+      },
+      gohome(){
+				this.$router.push({path:'home'})
+      },
+      goaboutus(){
+				this.$router.push({path:'about'})
+      },
+      gosolvecase(){
+				this.$router.push({path:'solvecase'})
+      },
+      goprojectcase(){
+				this.$router.push({path:'projectcase'})
+      },
+      gonews(){
+				this.$router.push({path:'news'})
+      },
+      gojoinus(){
+				this.$router.push({path:'joinus'})
+      },
+		}
+}
+</script>

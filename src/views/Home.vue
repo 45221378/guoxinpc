@@ -79,16 +79,16 @@
               <p class="img-p1">智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章</p>
               <p class="img-p2">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人口……</p>
           </div>
-          <div class="contain-right">
-              <ul>
-                  <li class="clearfix">
+          <div class="contain-right" id="swiper-containerTwo">
+              <ul ref="con1" class="swiper-wrapper" >
+                  <li class="clearfix swiper-slide" v-for='(el,i) in noticeList' v-bind:key='i'>
                       <div class="news-left">
                           <span class="day">19</span>
                           <span>2019-06</span>  
                       </div>
                       <div class="news-rigth">
-                          <p class="news-p1">智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章</p>
-                          <p class="news-p2">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人口……</p>
+                          <p class="news-p1">{{el.title}}</p>
+                          <p class="news-p2">{{el.content}}</p>
                       </div>
                   </li>
               </ul>
@@ -105,20 +105,19 @@
   import Trait from '@/components/Trait.vue'
   import Swiper from 'swiper'
   import SwiperDemo from "@/components/swiperDemo.vue"
+  import { getHomenews } from "@/assets/ajax/ajax.js";
 export default {
     name: 'home',
     data(){
         return{
+            noticeList: [],
+            animate:false,
+            intNum: undefined,
             arrItem:[
                 {img:require('@/img/index/banner.png')},
                 {img:require('@/img/banner-concatus.png')},
                 {img:require('@/img/banner-detail.png')},
-                ],
-            arrItem1:[
-            {img:require('@/img/index/jiankong.png')},
-            {img:require('@/img/index/login-pc.png')},
-            {img:require('@/img/index/admin-pc.png')},
-            ]
+                ]
         }
     },
     components: {
@@ -126,27 +125,44 @@ export default {
       Trait,
       SwiperDemo
     },
+    created(){
+        this.getNoticeData();
+    },
     methods:{
         _initSwiper(){
             let mySwiper = new Swiper('#swiper-containerOne', {
                 loop: true, 
+                autoplay: true,
                 pagination: {
                     el: '.swiper-pagination',
                 },
-                observer:true,
+                observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+                observeParents:true//修改swiper的父元素时，自动初始化swiper
             })
         },
+
+        getNoticeData() {
+            getHomenews().then(res=>{
+                console.log(res.data);
+                this.noticeList = res.data.lists;
+            })
+        },
+        
         _initSwiperTwo(){
-            let mySwiper = new Swiper('#swiper-containerTwo', {
-                slidesPerView: 3,
-                centeredSlides: true,
-                loop: true,
+            let mySwiper = new Swiper('#swiper-containerTwo', { 
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                loop: true, 
+                autoplay: {
+                    delay: 1000,
+                },
             })
         }
     },
     mounted(){
-        this._initSwiper();
+        // this._initSwiper();
         this._initSwiperTwo();
+        
     }
 }
 </script>
@@ -154,4 +170,11 @@ export default {
 <style lang="scss" scoped>
 @import '../css/home.scss';
 @import '../assets/swiper/swiper.min.css';
+#swiper-containerTwo{
+    .swiper-wrapper{
+        .swiper-slide{
+            height: 100px;
+        }
+    }
+}
 </style>
