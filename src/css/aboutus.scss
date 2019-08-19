@@ -101,7 +101,24 @@
     }
   }
 }
-
+.about-animate{
+  display: block !important;
+  .appear{
+    @extend .appear-in;
+  }
+  .start-left{
+    @extend .to-top;
+  }
+  .start-top{
+    @extend .to-left;
+  }
+  .start-right{
+    @extend .to-right;
+  }
+  .start-bottom {
+    @extend .to-bottom;
+  }
+}
 
 
 .to-top {

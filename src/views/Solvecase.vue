@@ -296,13 +296,16 @@ export default {
       document.documentElement.scrollTop = 6630;
     }
 
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll,false);
+  },
+  destroyed(){
+    window.removeEventListener('scroll', this.handleScroll,false);
   },
   methods:{
     handleScroll () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || 
       document.body.scrollTop
-      console.log(scrollTop);
+      // console.log(scrollTop);
       if(scrollTop>3200 && scrollTop <  4700){
         this.fadeClass = 'fade-in-up';
       }else{

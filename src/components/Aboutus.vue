@@ -1,7 +1,7 @@
 <template>
-  <section class="aboutus clearfix">
-        <div class="list-introduce">
-            <div class="appear-in">
+  <section class="aboutus clearfix" ref='element'>
+        <div class="list-introduce none" :class="fadeClass">
+            <div class="appear">
                 <h6>关于我们</h6>
                 <p class="list-detail">
                     国信天宇网络技术有限公司是一家互联网软件研发公司，注册资本5000万元，致力于在全国市场开展智慧路灯照明与智慧城市建设项目工作。在上市公司的支持下，我们秉承自主创新、科学发展的理念，奉行与上市公司共同进步的双赢发展战略，实现公司的长远发展和社会价值。
@@ -11,34 +11,57 @@
                 </p>
             </div>
             
-            <i class="start-left to-top"></i>
-            <i class="start-top to-left"></i>
-            <i class="start-right to-right"></i>
-            <i class="start-bottom to-bottom"></i>
-
-
-            <!-- <i class="left"></i>
-            <i class="top"></i>
-            <i class="right"></i>
-            <i class="bottom"></i> -->
-        </div>
-        <!-- <div class="start">
             <i class="start-left"></i>
             <i class="start-top"></i>
             <i class="start-right"></i>
-            <i class="start-bottom"></i>  
-        </div> -->
+            <i class="start-bottom"></i>
+
+           
+        </div>
         <div class="list-img">
             <img src="../img/index/index-title.png" alt="">
         </div>
-
-
-
-         
     </section>
 </template>
 
 <style scoped lang="scss">
   @import "../css/aboutus.scss";
 </style>
+
+<script>
+export default {
+    data(){
+        return{
+            fadeClass:''
+        }
+    },
+    mounted(){
+        window.addEventListener('scroll',this.aboutusScroll,false);
+    },
+    destroyed(){
+        window.removeEventListener('scroll',this.aboutusScroll,false);
+    },
+    methods:{
+        aboutusScroll () {
+            //滑动的距离
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || 
+            document.body.scrollTop;   
+            //底部到顶部的距离，整个页面的高度
+            // let $scrollH = document.documentElement.scrollHeight;
+            //div距离顶部的高度
+            let topHeight = this.$refs.element.offsetHeight ; 
+            console.log(topHeight-scrollTop);
+
+
+            //显示屏的高度
+            // let $h = document.documentElement.clientHeight;
+
+            // console.log(scrollTop);
+            if(topHeight-scrollTop<200){
+                this.fadeClass = 'about-animate';
+            }
+        },
+    }
+}
+</script>
 
