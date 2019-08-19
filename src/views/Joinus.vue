@@ -78,9 +78,11 @@ export default {
   name: 'test',
   mounted(){
     // jounus()
-      jounus().then(res=>{
-        console.log(res);
-      })
+    document.documentElement.scrollTop = 0;
+    jounus().then(res=>{
+      console.log(res);
+    })
+
   },
   data () {
     return {

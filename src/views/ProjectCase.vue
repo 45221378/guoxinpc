@@ -43,3 +43,10 @@
   @import "../css/projectCase.scss";
 
 </style>
+<script>
+export default {
+  mounted(){
+    document.documentElement.scrollTop = 0;
+  }
+}
+</script>

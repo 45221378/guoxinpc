@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://47.102.133.34:3000/";
+axios.defaults.baseURL = "http://localhost:3000";
 
 axios.interceptors.request.use(function (config) {
   return config
@@ -25,5 +25,9 @@ export async function jounus(){
 }
 
 export async function getHomenews(){
-  return await axios.post(`http://192.168.0.103:3000/api/user`);
+  return await axios.post(`/api/user`);
+}
+
+export async function getNewsList(){
+  return await axios.get(`/gx/list`);
 }

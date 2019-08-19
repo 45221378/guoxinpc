@@ -1,6 +1,6 @@
 <template>
   <section class="aboutus clearfix" ref='element'>
-        <div class="list-introduce none" :class="fadeClass">
+        <div class="list-introduce none" :class="fadeClass" >
             <div class="appear">
                 <h6>关于我们</h6>
                 <p class="list-detail">
@@ -51,13 +51,14 @@ export default {
             //底部到顶部的距离，整个页面的高度
             // let $scrollH = document.documentElement.scrollHeight;
             //div距离顶部的高度
-            let topHeight = this.$refs.element.offsetHeight ; 
+            let topHeight = this.$refs.element.offsetTop ; 
+            // console.log(topHeight);
             // console.log(topHeight-scrollTop);
 
             //显示屏的高度
             // let $h = document.documentElement.clientHeight;
 
-            if(topHeight-scrollTop<500){
+            if(topHeight-scrollTop<300){
                 this.fadeClass = 'about-animate';
             }
         },

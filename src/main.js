@@ -7,15 +7,18 @@ Vue.config.productionTp = false
 
 // Vue.prototype.$axios = axios   // this.$axios
 
-require("babel-polyfill");
+// require("babel-polyfill");
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);    
 
 import "@/css/index.scss";
 
 
 
 // require("'@babel/polyfill'")
-// import 'babel-polyfill'
+import 'babel-polyfill'
 // import "polyfill";
 // require("polyfill");
 

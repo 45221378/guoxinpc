@@ -79,9 +79,9 @@
               <p class="img-p1">智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章</p>
               <p class="img-p2">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人口……</p>
           </div>
-          <div class="contain-right" id="swiper-containerTwo">
-              <ul ref="con1" class="swiper-wrapper" >
-                  <li class="clearfix swiper-slide" v-for='(el,i) in noticeList' v-bind:key='i'>
+          <div class="contain-right swiper-container" id="swiper-containerTwo">
+              <div ref="con1" class="swiper-wrapper" >
+                  <div class="clearfix swiper-slide slide-text" v-for='(el,i) in noticeList' v-bind:key='i'>
                       <div class="news-left">
                           <span class="day">19</span>
                           <span>2019-06</span>  
@@ -90,8 +90,8 @@
                           <p class="news-p1">{{el.title}}</p>
                           <p class="news-p2">{{el.content}}</p>
                       </div>
-                  </li>
-              </ul>
+                  </div>
+              </div>
           </div>
       </section>
     </div>
@@ -126,7 +126,7 @@ export default {
       SwiperDemo
     },
     created(){
-        this.getNoticeData();
+        // this.getNoticeData();
     },
     methods:{
         _initSwiper(){
@@ -145,23 +145,24 @@ export default {
             getHomenews().then(res=>{
                 console.log(res.data);
                 this.noticeList = res.data.lists;
+                this.$nextTick(()=>{
+                    this._initSwiperTwo()
+                })
             })
         },
         
         _initSwiperTwo(){
             let mySwiper = new Swiper('#swiper-containerTwo', { 
                 direction: 'vertical',
-                slidesPerView: 'auto',
+                slidesPerView:3,
                 loop: true, 
-                autoplay: {
-                    delay: 1000,
-                },
+                autoplay:true,
+                speed:2000
             })
         }
     },
     mounted(){
-        // this._initSwiper();
-        this._initSwiperTwo();
+        this.getNoticeData()
         
     }
 }
@@ -170,11 +171,18 @@ export default {
 <style lang="scss" scoped>
 @import '../css/home.scss';
 @import '../assets/swiper/swiper.min.css';
-#swiper-containerTwo{
-    .swiper-wrapper{
-        .swiper-slide{
-            height: 100px;
-        }
-    }
+// #swiper-containerTwo{
+//     .swiper-wrapper{
+//         .swiper-slide{
+//             height: 100px;
+//         }
+//     }
+// }
+#swiper-containerTwo , .slide-text {
+    height:421px;
+}
+
+.slide-text {
+    border:2px solid darkcyan;
 }
 </style>

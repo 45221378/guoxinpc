@@ -103,6 +103,7 @@
 }
 .about-animate{
   display: block !important;
+  animation-delay: 1s;
   .appear{
     @extend .appear-in;
   }
