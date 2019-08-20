@@ -197,7 +197,7 @@
             <div>
               <h4>智慧照明</h4>
             </div>
-            <div class="zhdg-main clearfix">
+            <div class="zhdg-main clearfix border-none">
               <img class="fl-left img3" src="@/img/solvecase/list3.png" alt="">
               <p class="fl-right p3">21世纪以来，能源危机和环境污染严重,“节能减排”已成为全球节能号召，备受瞩目。其中，照明节能是“节能减排”中非常重要的一环，传统照明带来大量二氧化碳等气体的排放，对于环境的影响也将越来越大，随着城市照明快速发展，上述问题还将更加突出。在照明用电中，路灯占有相当的份额，由于线路工作时间长，耗能非常之大，推广绿色照明势在必行。确保按时、按需点亮每一盏灯，并能有效地节省路灯的用电电量、延长灯泡的寿命、降低维护和管理的成本是现代效能型社会追求的目标。因此，探索和应用新型的绿色的照明供电方式，对温室气体减排目标，意义十分重大。</p>
             </div>
@@ -212,6 +212,7 @@
           <h5 class="colorwhite">产品选型</h5>
           <i class="bgwhite"></i>
         </div>
+        
         <p class="cpxx-detail">通过应用先进、高效、可靠的电力线载波通信技术和无线GPRS/CDMA通信技术等，实现对路灯的远程集中控制与管理的路灯，包括单灯控制，PM2.5检测、天气情况、5G微基站，以及根据车流量自动调节亮度、远程照明控制、故障主动报警、灯具线缆防盗、远程抄表等功能，大幅节省电力资源，实现一杆多用。</p>
         <ul class="cpxx-ul clearfix">
           <li class="li1">
@@ -264,8 +265,9 @@
             </div> -->
           </li>
         </ul>
-      </section>
 
+      </section>
+      <Gototop/>
     </section>
     
 
@@ -274,16 +276,26 @@
 
 <script>
 import Trait from '@/components/Trait.vue'
+import Gototop from '@/components/Gototop.vue'
+
 export default {
   name: 'solvecase',
   components: {
-    Trait
+    Trait,
+    Gototop
   },
   data(){
     return {
       fadeClass:""
     }
   },
+  // beforeRouteEnter(to,from,next){
+  //   console.log(to.query.mId);
+    
+  //   // console.log(from)
+  //   // console.log(next)
+  //   next();
+  // },
   mounted(){
     // window.addEventListener('scroll',this.scroll,false);
     let mId = this.$route.query.mId;
@@ -316,6 +328,7 @@ export default {
         this.fadeClass = '';
       }
     },
+    
     // scroll(){
     //   // console.log(document.documentElement.scrollHeight);
     //   console.log(window.scrollY);
@@ -326,7 +339,8 @@ export default {
     gocpxx(){
       document.documentElement.scrollTop = 6630;
     }
-  }
+  },
+  
 }
 </script>
 

@@ -66,6 +66,7 @@
         <h5>企业文化</h5>
         <i></i>
       </div>
+      
       <p class="culture-p">企业理念/企业定位/企业使命/企业愿景</p>
       <ul class="culture-list">
         <li>
@@ -119,10 +120,8 @@
     },
     mounted(){
       let mId = this.$route.query.mId;
-      console.log(mId);
       // console.log(document.documentElement.scrollTop);
       if(!mId){
-        console.log(111);
         document.documentElement.scrollTop = 0;
       }
       if(mId=='qyjs'){

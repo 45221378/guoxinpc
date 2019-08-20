@@ -12,7 +12,7 @@
             <a @click="gozhdg" class="co89">智慧灯杆</a>
             <a @click="gocpxx" class="co89 mgt19">产品选型</a>
             <a @click="goprojectcase">项目案例</a>
-            <a @click="gonews">新闻资讯</a>
+            <a @click="gogsxx">新闻资讯</a>
             <a @click="gogsxx" class="co89">公司新闻</a>
             <a @click="gohyxx" class="co89 mgt19">行业新闻</a>
             <a @click="gojoinus">联系我们</a>
@@ -36,9 +36,14 @@
 </style>
 <script>
 export default {
+  data(){
+    return{
+      newData:  Date.parse(new Date())
+    }
+  },
   methods:{
 			goqyjs(){
-				this.$router.push({path:'about',query:{mId:'qyjs'}})
+				this.$router.push({path:'about',query:{mId:'qyjs',data:this.newData}})
 			},
 			goqywh(){
 				this.$router.push({path:'about',query:{mId:'qywh'}})
@@ -69,9 +74,6 @@ export default {
       },
       goprojectcase(){
 				this.$router.push({path:'projectcase'})
-      },
-      gonews(){
-				this.$router.push({path:'news'})
       },
       gojoinus(){
 				this.$router.push({path:'joinus'})

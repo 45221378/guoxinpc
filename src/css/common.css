@@ -10,6 +10,9 @@ body, html {
   /* overflow: hidden;
   overflow-y: scroll; */
 }
+a{
+  cursor: pointer;
+}
 
 @media (max-width: 992px) {
   .map-item a {

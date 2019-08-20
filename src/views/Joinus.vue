@@ -1,6 +1,6 @@
 <template>
   <div class="joinus about">
-    <img class="banner-us" src="@/img/banner-news.png" alt="">  
+    <img class="banner-us" src="@/img/banner-concatus.png" alt="">  
       <div class="joinus-main">
         <div class="h5-title">
           <div class="content-title">
@@ -65,7 +65,7 @@
 // // 初始化  vue-amap
 import AMap from 'vue-amap';
 import Vue from "vue"
-import { jounus } from "@/assets/ajax/ajax.js";
+// import { jounus } from "@/assets/ajax/ajax.js";
 
 Vue.use(AMap);
 AMap.initAMapApiLoader({

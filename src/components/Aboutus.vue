@@ -2,7 +2,7 @@
   <section class="aboutus clearfix" ref='element'>
         <div class="list-introduce none" :class="fadeClass" >
             <div class="appear">
-                <h6>关于我们</h6>
+                <h6 @click="goqyjs">关于我们</h6>
                 <p class="list-detail">
                     国信天宇网络技术有限公司是一家互联网软件研发公司，注册资本5000万元，致力于在全国市场开展智慧路灯照明与智慧城市建设项目工作。在上市公司的支持下，我们秉承自主创新、科学发展的理念，奉行与上市公司共同进步的双赢发展战略，实现公司的长远发展和社会价值。
                 </p>
@@ -18,7 +18,7 @@
            
         </div>
         <div class="list-img">
-            <img src="../img/index/index-title.png" alt="">
+            <img  @click="goqyjs" src="../img/index/index-title.png" alt="">
         </div>
     </section>
 </template>
@@ -61,6 +61,10 @@ export default {
             if(topHeight-scrollTop<300){
                 this.fadeClass = 'about-animate';
             }
+        },
+
+        goqyjs(){
+            this.$router.push({path:'about',query:{mId:'qyjs'}})
         },
     }
 }

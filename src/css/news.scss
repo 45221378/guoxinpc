@@ -1,14 +1,14 @@
 .news{
   &-list{
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     ul{
-      padding: 112px 0 108px 0;
+      padding: 112px 0 83px 0;
       li{
         width: 383px;
-        height: 507px;
+        height: 100%;
         float: left;
-        margin: 0 13px;
+        margin: 0 13px 25px 0;
         .list-img{
           width: 383px;
           height: 304px;
@@ -70,6 +70,18 @@
   }
 }
 
+.nav-pagation{
+  margin-bottom: 84px;
+}
+.el-pagination .el-pager li .active {
+  background-color: #1AB1ED !important;
+  color: #FFF;
+}
+.el-pager li.active {
+  color: #1AB1ED !important;
+  cursor: default;
+}
+
 
 .newsDetail{
   h6{
@@ -83,3 +95,5 @@
     color: #313131;
   }
 }
+
+

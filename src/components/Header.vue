@@ -47,9 +47,9 @@
           </router-link>
         </li>
         <li class="nav-item ">
-          <router-link :to="{name:'news'}" class="nav-item-a">
+          <a @click="gogsxx" class="nav-item-a">
     				<span class="header-title">新闻动态</span>
-          </router-link>
+          </a>
           <ol class="show-links">
     				<b class="show-arrow"></b>
     				<li class="link-item">
@@ -79,6 +79,7 @@
 		data(){
 			return{
 				headerBlue: 1,
+				newData:  Date.parse(new Date())
 			}
 		},
 		mounted(){
@@ -86,7 +87,7 @@
 		},
 		methods:{
 			goqyjs(){
-				this.$router.push({path:'about',query:{mId:'qyjs'}})
+				this.$router.push({path:'about',query:{mId:'qyjs',data:this.newData}})
 			},
 			goqywh(){
 				this.$router.push({path:'about',query:{mId:'qywh'}})

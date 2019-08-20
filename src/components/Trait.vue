@@ -1,4 +1,3 @@
-
 <template>
   <section class="trait about">
         <div class="h5-title">

@@ -14,15 +14,15 @@
         </div>
         <ul class="xmal-img">
           <li>
-            <img src="@/img/projectCase/swiper1.png" />
+            <img src="@/img/index/WechatIMG31.png" />
             <p>智慧照明综合管理平台登录界面</p>
           </li>
           <li>
-            <img src="@/img/projectCase/swiper2.png" />
+            <img src="@/img/index/WechatIMG32.jpeg" />
             <p>智慧照明综合管理功能操作平台</p>
           </li>
           <li>
-            <img src="@/img/projectCase/swiper3.png" />
+            <img src="@/img/index/WechatIMG33.jpeg" />
             <p>智慧照明平台应用管理页面</p>
           </li>
         </ul>

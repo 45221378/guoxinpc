@@ -12,9 +12,9 @@
     <Aboutus/>
     <section class="solve">
       <div class="solve-main clearfix">
-        <img src="@/img/index/iMac.png" alt="">
+        <img @click="gozhzm" src="@/img/index/iMac.png" alt=""> 
         <div class="solve-detail">
-            <h6>解决方案</h6>
+            <h6 class="solevecase" @click="gozhzm">解决方案</h6>
             <p>智慧照明综合管理平台</p>
             <i></i>
             <p>国信天宇希望通过提升综合管理和科技信息水平，建设以城市道路照明管理为核心，构建融合智能应用技术和现代信息技术，广域泛在、开放共享的综合管理系统，促进路灯运维、建设、经营、服务灵活介入、协调互动、多能互补，提高数字化管理水平，弥补系统和人员不足。</p>
@@ -23,7 +23,7 @@
     </section>
     <Trait/>
     <div class="detail">
-      <h5>项目案例</h5>
+      <h5 @click="goprojectcase">项目案例</h5>
       <p class="trait-detail">智慧照明综合管理平台解决方案</p>
       <div class="scale-swiper">
             <SwiperDemo></SwiperDemo>
@@ -80,8 +80,8 @@
               <p class="img-p2">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人口……</p>
           </div>
           <div class="contain-right swiper-container" id="swiper-containerTwo">
-              <div ref="con1" class="swiper-wrapper" >
-                  <div class="clearfix swiper-slide slide-text" v-for='(el,i) in noticeList' v-bind:key='i'>
+              <div ref="con1" class="ul swiper-wrapper" >
+                  <div class="clearfix swiper-slide slide-text li" v-for='(el,i) in noticeList' v-bind:key='i'>
                       <div class="news-left">
                           <span class="day">19</span>
                           <span>2019-06</span>  
@@ -95,17 +95,17 @@
           </div>
       </section>
     </div>
-        
+    <Gototop/> 
   </div>
 </template>
 
 <script>
-
   import Aboutus from '@/components/Aboutus.vue'
   import Trait from '@/components/Trait.vue'
   import Swiper from 'swiper'
-  import SwiperDemo from "@/components/swiperDemo.vue"
-  import { getHomenews } from "@/assets/ajax/ajax.js";
+  import SwiperDemo from '@/components/swiperDemo.vue'
+  import Gototop from '@/components/Gototop.vue'
+//   import { getHomenews } from "@/assets/ajax/ajax.js";
 export default {
     name: 'home',
     data(){
@@ -123,7 +123,8 @@ export default {
     components: {
       Aboutus,
       Trait,
-      SwiperDemo
+      SwiperDemo,
+      Gototop
     },
     created(){
         // this.getNoticeData();
@@ -131,23 +132,66 @@ export default {
     methods:{
         _initSwiper(){
             let mySwiper = new Swiper('#swiper-containerOne', {
-                loop: true, 
-                autoplay: true,
+                loop: true,
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true,
                 },
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper 
                 observeParents:true//修改swiper的父元素时，自动初始化swiper
             })
+            // //鼠标滑过pagination控制swiper切换
+            // for(i=0;i<mySwiper.pagination.bullets.length;i++){
+            //     mySwiper.pagination.bullets[i].onmouseover=function(){
+            //         this.click();
+            //     };
+            // } 
         },
 
         getNoticeData() {
-            getHomenews().then(res=>{
-                console.log(res.data);
-                this.noticeList = res.data.lists;
-                this.$nextTick(()=>{
-                    this._initSwiperTwo()
-                })
+            // getHomenews().then(res=>{
+            //     console.log(res.data);
+            //     this.noticeList = res.data.lists;
+            //     this.$nextTick(()=>{
+            //         this._initSwiperTwo()
+            //     })
+            // })
+
+
+            
+            this.noticeList = [
+                    {
+                        'time':'2019-06-19',
+                        'title': '(1)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(1-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍'
+                    },{
+                        'time':'2019-06-20',
+                        'title': '(2)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(2-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍' 
+                    },{
+                        'time':'2019-06-21',
+                        'title': '(3)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(3-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍' 
+                    },{
+                        'time':'2019-06-22',
+                        'title': '(4)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(4-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍' 
+                    },{
+                        'time':'2019-06-23',
+                        'title': '(5)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(5-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍' 
+                    },{
+                        'time':'2019-06-24',
+                        'title': '(6)智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章',
+                        'content':'(6-1)截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人，是1978年的5.4倍，是1978年的5.4倍，是1978年的5.4倍' 
+                    }
+                ]
+            this.$nextTick(()=>{
+                this._initSwiperTwo()
             })
         },
         
@@ -157,13 +201,24 @@ export default {
                 slidesPerView:3,
                 loop: true, 
                 autoplay:true,
-                speed:2000
+                speed:1000
             })
-        }
+        },
+
+        //解决方案的跳转
+        gozhzm(){
+            this.$router.push({path:'solvecase',query:{mId:'zhzm'}})
+        },
+        //项目案列的跳转
+        goprojectcase(){
+            this.$router.push({path:'projectcase'})
+        },
+
     },
     mounted(){
+        this._initSwiper()
         this.getNoticeData()
-        
+        document.documentElement.scrollTop = 0;
     }
 }
 </script>
@@ -182,7 +237,12 @@ export default {
     height:421px;
 }
 
-.slide-text {
-    border:2px solid darkcyan;
+#swiper-containerOne .swiper-pagination span{
+    border: 1px solid #fff;
 }
+#swiper-containerOne .swiper-pagination-bullet {
+    border: 1px solid #fff;
+    
+}
+
 </style>

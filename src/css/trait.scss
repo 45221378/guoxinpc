@@ -24,17 +24,21 @@
       justify-content: center;
       align-items: center;
       margin: 0 10px 30px 10px;
+      border-radius: 50%;
       &:hover{
+        height: 250px;
+        width: 250px;
         border: 1px solid #1AB1ED;
         border-radius: 50%;
-        box-shadow:4px 6px 10px #b2b1b1;
+        box-shadow:4px 6px 10px #b2b1b1;      
         p{
           color: #1AB1ED;
         }
         .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10,.img11,.img12{
           display: none;
         }
-        .img1-1,.img2-2,.img3-3,.img4-4,.img5-5,.img6-6,.img7-7,.img8-8,.img9-9,.img10-10,.img11-11,.img12-12{
+        .img1-1,.img2-2,.img3-3,.img4-4,.img5-5,.img6-6,.img7-7,.img8-8,.img9-9,.img10-10,.img11-11,.img12-12{ 
+          
           display: block;
         }
       }
@@ -157,3 +161,28 @@
     }
   }
 }
+
+
+.appear-in {
+  -webkit-animation: appearIn 1.5s linear both;
+  -moz-animation: appearIn 1.5s linear both;
+  -ms-animation: appearIn 1.5s linear both;
+  -o-animation: appearIn 1.5s linear both;
+  animation: appearIn 1.5s linear both; }
+    @-webkit-keyframes appearIn {
+      0% {
+        opacity: 0; }
+      100% {
+        opacity: 1; } }
+    
+    @-moz-keyframes appearIn {
+      0% {
+        opacity: 0; }
+      100% {
+        opacity: 1; } }
+    
+    @keyframes appearIn {
+      0% {
+        display: none; }
+      100% {
+        display: block;} }

@@ -11,7 +11,7 @@ axios.interceptors.request.use(function (config) {
 axios.interceptors.response.use(function(response){
   return response
 },function (err) {
-  return promise.reject(err)
+  return Promise.reject(err)
 })
 
 
@@ -20,14 +20,14 @@ axios.interceptors.response.use(function(response){
 // }
 
 
-export async function jounus(){
-  return await axios.post(`https://v1.itooi.cn/netease/mv/top`);
-}
+// export async function jounus(){
+//   return await axios.post(`https://v1.itooi.cn/netease/mv/top`);
+// }
 
-export async function getHomenews(){
-  return await axios.post(`/api/user`);
-}
+// export async function getHomenews(){
+//   return await axios.post(`/api/user`);
+// }
 
-export async function getNewsList(){
-  return await axios.get(`/gx/list`);
+// export async function getNewsList(){
+//   return await axios.get(`/gx/list`);
 }

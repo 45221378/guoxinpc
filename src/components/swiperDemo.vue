@@ -1,6 +1,6 @@
 <template>
     <div class="swiper-container" id="certify">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" @click="goprojectcase">
             <div v-for="(item,index) in arr" :key="index" class="swiper-slide">
                 <img v-bind:src="item.img" alt="" class="c-img" >
             </div>
@@ -10,14 +10,14 @@
 
 
 <script>
- import Swiper from 'swiper'
+import Swiper from 'swiper'
 export default {
     data(){
         return {
             arr:[
-                {img:require('@/img/index/jiankong.png')},
-                {img:require('@/img/index/login-pc.png')},
-                {img:require('@/img/index/admin-pc.png')},
+                {img:require('@/img/index/WechatIMG31.png')},
+                {img:require('@/img/index/WechatIMG32.jpeg')},
+                {img:require('@/img/index/WechatIMG33.jpeg')},
             ]
             
             // imgs:[
@@ -74,6 +74,12 @@ export default {
                 }
             })
         })
+    },
+    methods:{
+        //项目案列的跳转
+        goprojectcase(){
+            this.$router.push({path:'projectcase'})
+        }
     }
 }
 </script>
@@ -101,9 +107,11 @@ export default {
 }
 
 #certify  .swiper-slide {
+    
 	width: 620px;
 	height: 408px;
-	background: #fff;
+    background: #fff;
+    cursor: pointer;
 	/* box-shadow: 0 8px 30px #ddd; */
 }
 #certify  .swiper-slide img{
