@@ -67,34 +67,44 @@
         <i></i>
       </div>
       
+      
       <p class="culture-p">企业理念/企业定位/企业使命/企业愿景</p>
       <ul class="culture-list">
         <li>
-          <h6>企业理念</h6>
+          <div class="div-hover">
+            <h6>企业理念</h6>
           <span>自主创新</span>
           <span>科学发展</span>
           <span>专注服务</span>
           <span>合作共赢</span>
+          </div>
+          
         </li>
         <li>
+           <div class="div-hover">
           <h6>企业定位</h6>
           <span>智慧城市场景师</span>
           <span>产业资源整合家</span>
           <span>移动互联生力军</span>
           <span>创新探索试验田</span>
           <span>和谐生态建设者</span>
+        </div>
         </li>
         <li>
+           <div class="div-hover">
           <h6>企业使命</h6>
           <span>贡献智慧解决方案</span>
           <span>释放产业发展空间</span>
           <span>构建全球智慧生态</span>
+          </div>
         </li>
         <li>
+           <div class="div-hover">
           <h6>企业愿景</h6>
           <span>成为国内领先的智慧</span>
           <span>路灯照明与智慧城市</span>
           <span>建设解决方案提供商</span>
+          </div>
         </li>
       </ul>
 

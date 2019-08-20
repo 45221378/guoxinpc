@@ -36,14 +36,6 @@ export default {
                 loop: true,
                 loopedSlides: 3,
                 autoplay: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    //clickable :true,
-                },
                 on: {
                     progress: function(progress) {
                         for (let i = 0; i < this.slides.length; i++) {

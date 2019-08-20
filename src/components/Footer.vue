@@ -43,40 +43,40 @@ export default {
   },
   methods:{
 			goqyjs(){
-				this.$router.push({path:'about',query:{mId:'qyjs',data:this.newData}})
+				this.$router.push({name:'about',params:{time:new Date().getTime()},query:{mId:'qyjs'}})
 			},
 			goqywh(){
-				this.$router.push({path:'about',query:{mId:'qywh'}})
+				this.$router.push({name:'about',params:{time:new Date().getTime()},query:{mId:'qywh'}})
 			},
 			gozhzm(){
-				this.$router.push({path:'solvecase',query:{mId:'zhzm'}})
+				this.$router.push({name:'solvecase',params:{time:new Date().getTime()},query:{mId:'zhzm'}})
 			},
 			gozhdg(){
-				this.$router.push({path:'solvecase',query:{mId:'zhdg'}})
+				this.$router.push({name:'solvecase',params:{time:new Date().getTime()},query:{mId:'zhdg'}})
 			},
 			gocpxx(){
-				this.$router.push({path:'solvecase',query:{mId:'cpxx'}})
+				this.$router.push({name:'solvecase',params:{time:new Date().getTime()},query:{mId:'cpxx'}})
 			},
 			gogsxx(){
-				this.$router.push({path:'news',query:{mId:'gsxx'}})
+				this.$router.push({name:'news',params:{time:new Date().getTime()},query:{mId:'gsxx'}})
 			},
 			gohyxx(){
-				this.$router.push({path:'news',query:{mId:'hyxx'}})
+				this.$router.push({name:'news',params:{time:new Date().getTime()},query:{mId:'hyxx'}})
       },
       gohome(){
-				this.$router.push({path:'home'})
+				this.$router.push({name:'home',params:{time:new Date().getTime()}})
       },
       goaboutus(){
-				this.$router.push({path:'about'})
+				this.$router.push({name:'about',params:{time:new Date().getTime()}})
       },
       gosolvecase(){
-				this.$router.push({path:'solvecase'})
+				this.$router.push({name:'solvecase',params:{time:new Date().getTime()}})
       },
       goprojectcase(){
-				this.$router.push({path:'projectcase'})
+				this.$router.push({name:'projectcase',params:{time:new Date().getTime()}})
       },
       gojoinus(){
-				this.$router.push({path:'joinus'})
+				this.$router.push({name:'joinus',params:{time:new Date().getTime()}})
       },
 		}
 }

@@ -205,32 +205,40 @@
       display: flex;
       justify-content: space-between;
       li{
+       
         width: 327px;
         height: 396px;
-        background: url(../img/aboutus/bg-blue.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding: 0 10px 0 40px;
         &:hover{
-          @extend .fade-in-up;
+          
+          .div-hover{
+            @extend .fade-in-up;
+          }
         }
-        h6{
-          height: 32px;
-          width: 108px;
-          background: #1AB1ED;
-          font-size: 19px;
-          color: #fff;
-          text-align: center;
-          line-height: 32px;
-          margin: 90px auto 35px ;
-        }
-        span{
-          display: block;
-          text-align: center;
+        .div-hover{ 
+          width: 327px;
+          height: 396px;
+          background: url(../img/aboutus/bg-blue.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          padding: 90px 10px 0 40px;
+          h6{
+            height: 32px;
+            width: 108px;
+            background: #1AB1ED;
+            font-size: 19px;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            margin: 0 auto 35px ;
+          }
+          span{
+            display: block;
+            text-align: center;
+          }
         }
         
-      }
-      
+        
+      }    
     }
   }
 }

@@ -162,43 +162,49 @@
     height: 698px;
     padding: 82px 0 170px 0;
     &-ul{
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
+      padding: 76px 0 0 0;
       width: 1078px;
       margin: 0 auto;
       li{    
         width: 359px;
         height: 369px;
-        margin: 76px 14px 0 14px;
-        .img{
-          width: 322px;
-          height: 273px;
-        }
-        .p-1{
-          font-size: 21px;
-          color: #000;
-          text-align: center;
-          margin-top: 32px;
-        }
-        .hover{
-          display: none;
-        }
-        &:hover{
+        // margin: 0 14px 0 14px;
+        float: left;
+        padding: 25px 0 52px 0;
+        .nohover{
           .img{
-            display: none;
+            width: 322px;
+            height: 273px;
+            margin: 0 auto;
           }
           .p-1{
-            display: none
+            font-size: 21px;
+            color: #000;
+            text-align: center;
+            margin-top: 32px;
           }
+        }    
+        .hover{
+          display: none;
+          
+        }
+        &:hover{
           width: 359px;
           height: 369px;
           border: 1px solid #1AB1ED;
-          margin: 76px 14px 0 14px;
+          // margin: 76px 14px 0 14px;
           box-shadow:0px 10px 10px 0px rgba(0, 0, 0, 0.2);
           padding: 25px 29px 52px 29px;
           // display: block;
-          @extend .fade-in-up;
-          .hover{
+          
+          .nohover{
+            display: none;
+            
+          }
+
+          .hover{@extend .fade-in-up;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -206,6 +212,7 @@
             .img-hover{
               width: 102px;
               height: 102px;
+              margin: 0 auto;
             }
             h6{
               font-size: 21px;
@@ -422,24 +429,39 @@
         background-size: 100% 100%;
         position: relative;
       }
-      .bgblack{
-        position: absolute;
-        top: 0;
-        left: 0;
+      // .bgblack{
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
 
-      }
+      // }
       .li1{
-        background-image: url(../img/solvecase/tianyu1.png);
+        // background-image: url(../img/solvecase/tianyu1.png);
+        .img1{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        .img2{
+          width: 100%;
+          height: 100%;
+          display: none;
+        }
         &:hover{
-          @extend .fade-in-up;
-          width: 360px;
-          height: 527px;
-          // margin: 0 17px 21px 0;
-          // width: 377px;
-          // height: 548px;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          background-image: url(../img/solvecase/blackbg1.png);
+          .img1{
+            display: none;
+          }
+          .img2{
+            display: block;
+          }
+          // width: 360px;
+          // height: 527px;
+          // // margin: 0 17px 21px 0;
+          // // width: 377px;
+          // // height: 548px;
+          // background-repeat: no-repeat;
+          // background-size: 100% 100%;
+          // background-image: url(../img/solvecase/blackbg1.png);
         }
       }
       .li2{

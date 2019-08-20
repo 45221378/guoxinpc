@@ -83,10 +83,13 @@
           <h5>平台规划</h5>
           <i></i>
         </div>
-        <ul class="ptgh-ul">
+        <ul class="ptgh-ul clearfix">
           <li>
-            <img class="img" src="@/img/solvecase/jiantou1.png" alt="">
-            <p class="p-1">核心业务平台化</p>
+            <div class="nohover">
+              <img class="img" src="@/img/solvecase/jiantou1.png" alt="">
+              <p class="p-1">核心业务平台化</p>
+            </div>
+            
 
             <div class="hover">
               <img class="img-hover" src="@/img/solvecase/jiantou1-1.png" alt="">
@@ -97,8 +100,10 @@
             </div>
           </li>
           <li>
+            <div class="nohover">
             <img class="img"  src="@/img/solvecase/jiantou2.png" alt="">
             <p class="p-1">管理数据智能化</p>
+            </div>
 
             <div class="hover">
               <img class="img-hover" src="@/img/solvecase/jiantou2-2.png" alt="">
@@ -111,8 +116,10 @@
 
           </li>
           <li>
+            <div class="nohover">
             <img class="img"  src="@/img/solvecase/jiantou3.png" alt="">
             <p class="p-1">决策智能化</p>
+            </div>
 
             <div class="hover">
               <img class="img-hover" src="@/img/solvecase/jiantou3-3.png" alt="">
@@ -216,6 +223,8 @@
         <p class="cpxx-detail">通过应用先进、高效、可靠的电力线载波通信技术和无线GPRS/CDMA通信技术等，实现对路灯的远程集中控制与管理的路灯，包括单灯控制，PM2.5检测、天气情况、5G微基站，以及根据车流量自动调节亮度、远程照明控制、故障主动报警、灯具线缆防盗、远程抄表等功能，大幅节省电力资源，实现一杆多用。</p>
         <ul class="cpxx-ul clearfix">
           <li class="li1">
+            <img src="@/img/solvecase/tianyu1.png" class="img1" alt="">
+            <img src="@/img/solvecase/blackbg1.png" class="img2" alt="">
             <!-- <div class="showli">
               <h5>天宇1号</h5>
               <h6>LED路灯系统</h6>
@@ -230,8 +239,18 @@
               <p>满足常规道路监控与应急监控；</p>
             </div> -->
           </li>
-          <li class="li2">
-            <!-- <div class="showli">
+          <li class="li1">
+            <img src="@/img/solvecase/tianyu2.png" class="img1" alt="">
+            <img src="@/img/solvecase/blackbg2.png" class="img2" alt="">
+            
+          </li>
+          <li class="li1">
+            <img src="@/img/solvecase/tianyu3.png" class="img1" alt="">
+            <img src="@/img/solvecase/blackbg3.png" class="img2" alt="">
+            
+          </li>
+           <!-- <li class="li2">
+           <div class="showli">
               <h5>天宇2号</h5>
               <h6>LED路灯系统</h6>
               <p>与终端控制器实现远程控制及状态查询等；</p>
@@ -245,10 +264,10 @@
               <p>满足常规道路监控与应急监控；</p>
               <h6>充电桩系统</h6>
               <p>为具备车载充电机的电动汽车提供电能；</p>
-            </div> -->
-          </li>
-          <li class="li3">
-            <!-- <div class="showli">
+            </div>
+          </li> -->
+          <!--<li class="li3">
+             <div class="showli">
               <h5>天宇3号</h5>
               <h6>LED路灯系统</h6>
               <p>与终端控制器实现远程控制及状态查询等；</p>
@@ -262,8 +281,8 @@
               <p>便于紧急信息发布与市民的紧急求助；</p>
               <h6>智慧广播音响系统</h6>
               <p>通过高质量音频信号的发布实现智慧广播；</p>
-            </div> -->
-          </li>
+            </div>
+          </li> -->
         </ul>
 
       </section>

@@ -89,10 +89,31 @@
     color: #313131;
     text-align: center;
     width: 939px;
+    margin: 106px auto 35px;
+    font-weight: 400;
+    line-height: 48px;
+
   }
   .days{
     font-size: 24px;
     color: #313131;
+    text-align: center;
+    margin: 0 0 65px 0;
+    display: block;
+  }
+  .content{
+    width: 1000px;
+    margin: 0 auto 110px;
+    &-p{
+      font-size: 16px;
+      color: #313131;
+      text-align: left;
+      display: block;
+      line-height: 50px;
+    }
+    
+    
+    
   }
 }
 

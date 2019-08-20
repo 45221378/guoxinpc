@@ -9,12 +9,12 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/home',
+      path: '/home/:time?',
       name: 'home',
       component: ()=> import('@/views/Home.vue')
     },
     {
-      path:"/about",
+      path:"/about/:time?",
       name:'about',
       component:()=> import('@/views/About.vue'),
       // children:[
@@ -31,17 +31,17 @@ export default new Router({
       // ]
     },
     {
-      path: '/solvecase',
+      path: '/solvecase/:time?',
       name: 'solvecase',
       component:  ()=> import('@/views/Solvecase')
     },
     {
-      path: '/projectcase',
+      path: '/projectcase/:time?',
       name: 'projectcase',
       component:  ()=> import('@/views/ProjectCase')
     },
     {
-      path: '/news',
+      path: '/news/:time?',
       name: 'news',
       component:  ()=> import('@/views/News')
     },
@@ -51,7 +51,7 @@ export default new Router({
       component:  ()=> import('@/views/NewsDetail')
     },
     {
-      path: '/joinus',
+      path: '/joinus/:time?',
       name: 'joinus',
       component: Joinus
     },

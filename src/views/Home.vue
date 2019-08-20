@@ -1,14 +1,14 @@
 <template>
   <div id="home">
-    <section class="h-banner swiper-container" id="swiper-containerOne">
+    <div class="h-banner swiper-container" id="swiper-containerOne">
         <!-- <img src="@/img/index/banner.png" alt=""> -->
         <div class="swiper-wrapper">
             <div v-for='(el,i) in arrItem' v-bind:key="i" class="swiper-slide">
                 <img v-bind:src="el.img" />
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-    </section>
+        <div class="swiper-pagination" id="one-page"></div>
+    </div>
     <Aboutus/>
     <section class="solve">
       <div class="solve-main clearfix">
@@ -26,7 +26,7 @@
       <h5 @click="goprojectcase">项目案例</h5>
       <p class="trait-detail">智慧照明综合管理平台解决方案</p>
       <div class="scale-swiper">
-            <SwiperDemo></SwiperDemo>
+        <SwiperDemo></SwiperDemo>
         <!-- <div class="swiper-container" id="swiper-containerTwo"  >
             <div class="swiper-wrapper">
                 <div v-for='(el,i) in arrItem1' :style="{'background-image':'url('+el.img+')'}" v-bind:key="i" class="swiper-slide">
@@ -127,22 +127,26 @@ export default {
       Gototop
     },
     created(){
+        console.log("sssasaassa")
         // this.getNoticeData();
     },
     methods:{
         _initSwiper(){
-            let mySwiper = new Swiper('#swiper-containerOne', {
+            let mySwiperOne = new Swiper('#swiper-containerOne', {
                 loop: true,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
+                    // bulletClass : 'ope-bullet',//需设置.my-bullet样式
+                    // bulletActiveClass: 'one-bullet-active',
                 },
+                autoplay:false,
                 // navigation: {
                 //     nextEl: '.swiper-button-next',
                 //     prevEl: '.swiper-button-prev',
                 // },
-                observer:true,//修改swiper自己或子元素时，自动初始化swiper 
-                observeParents:true//修改swiper的父元素时，自动初始化swiper
+                // observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+                // observeParents:true//修改swiper的父元素时，自动初始化swiper
             })
             // //鼠标滑过pagination控制swiper切换
             // for(i=0;i<mySwiper.pagination.bullets.length;i++){
@@ -224,25 +228,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 @import '../css/home.scss';
-@import '../assets/swiper/swiper.min.css';
-// #swiper-containerTwo{
-//     .swiper-wrapper{
-//         .swiper-slide{
-//             height: 100px;
-//         }
-//     }
-// }
+
+
 #swiper-containerTwo , .slide-text {
     height:421px;
 }
 
-#swiper-containerOne .swiper-pagination span{
-    border: 1px solid #fff;
-}
-#swiper-containerOne .swiper-pagination-bullet {
-    border: 1px solid #fff;
-    
-}
+
+
+
 
 </style>
