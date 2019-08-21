@@ -25,7 +25,7 @@
         </li> -->
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>公司新闻</h6>
@@ -39,7 +39,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -53,7 +53,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -67,7 +67,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -81,7 +81,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -95,7 +95,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -136,7 +136,7 @@
         </li> -->
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>行业新闻</h6>
@@ -150,7 +150,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -164,7 +164,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -178,7 +178,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -192,7 +192,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>
@@ -206,7 +206,7 @@
         </li> 
         <li>
           <div class="list-img">
-            <img src="@/img/banner-news.png" alt="">
+            <img src="@/img/index/city.png" alt="">
           </div> 
           <div class="list-detail">
             <h6>智慧路灯已经形成万亿级新兴产业，智…</h6>

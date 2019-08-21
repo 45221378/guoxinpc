@@ -430,36 +430,49 @@
         // width: 377px;
         // height: 548px;
         width: 360px;
-        height: 527px;
+        height: 526px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;
-      }
-      // .bgblack{
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-
-      // }
-      .li1{
-        // background-image: url(../img/solvecase/tianyu1.png);
-        .img1{
-          width: 100%;
-          height: 100%;
-          display: block;
-        }
-        .img2{
-          width: 100%;
-          height: 100%;
-          display: none;
-        }
         &:hover{
-          .img1{
+          img{
             display: none;
           }
-          .img2{
+          .showli{
             display: block;
+            h5,h6,p{
+              @extend .fade-in-up;
+            }
           }
+        }
+        img{
+          display: block;
+        }
+        .showli{
+          display: none;
+          background:rgba(0,0,0,.8);
+          text-align: center;
+          color: #fff;
+          height: 100%;
+          h5{
+            font-size: 19px;
+            padding: 40px 0 34px 0;
+          }
+          h6{
+            font-size: 16px;
+            line-height: 32px;
+          }
+          p{
+            font-size: 16px;
+            color: #dcdcdc;
+            line-height: 32px;
+          }
+        }
+      }
+      .li1{
+        img{
+          background-image: url(../img/solvecase/tianyu1.png);
+        }
           // width: 360px;
           // height: 527px;
           // // margin: 0 17px 21px 0;
@@ -468,37 +481,41 @@
           // background-repeat: no-repeat;
           // background-size: 100% 100%;
           // background-image: url(../img/solvecase/blackbg1.png);
-        }
       }
       .li2{
-        background-image: url(../img/solvecase/tianyu2.png);
-        &:hover{
-          @extend .fade-in-up;
-          width: 360px;
-          height: 527px;
-          // margin: 0 17px 21px 0;
-          // width: 377px;
-          // height: 548px;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          background-image: url(../img/solvecase/blackbg2.png);
+        img{
+          background-image: url(../img/solvecase/tianyu2.png);
+
         }
+        // &:hover{
+        //   @extend .fade-in-up;
+        //   width: 360px;
+        //   height: 527px;
+        //   // margin: 0 17px 21px 0;
+        //   // width: 377px;
+        //   // height: 548px;
+        //   background-repeat: no-repeat;
+        //   background-size: 100% 100%;
+        //   background-image: url(../img/solvecase/blackbg2.png);
+        // }
       }
       .li3{
-        background-image: url(../img/solvecase/tianyu3.png);
-        &:hover{
-          @extend .fade-in-up;
-          width: 360px;
-          height: 527px;
-          // margin: 0 17px 21px 0;
-          // width: 377px;
-          // height: 548px;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          background-image: url(../img/solvecase/blackbg3.png);
+        img{
+          background-image: url(../img/solvecase/tianyu3.png);
+
         }
+        // &:hover{
+        //   @extend .fade-in-up;
+        //   width: 360px;
+        //   height: 527px;
+        //   // margin: 0 17px 21px 0;
+        //   // width: 377px;
+        //   // height: 548px;
+        //   background-repeat: no-repeat;
+        //   background-size: 100% 100%;
+        //   background-image: url(../img/solvecase/blackbg3.png);
+        // }
       }
     }
   }
-
 }

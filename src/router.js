@@ -5,7 +5,8 @@ Vue.use(Router)
 import  Joinus from '@/views/Joinus';
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
+  mode:'hash',
   base: process.env.BASE_URL,
   routes: [
     {

@@ -236,35 +236,32 @@
             text-align: center;
           }
         }
-        
-        
       }    
     }
   }
 }
 
-
 .fade-in-up {
-  -webkit-animation: fadeInUp 0.5s linear both;
-  -moz-animation: fadeInUp 0.5s linear both;
-  -ms-animation: fadeInUp 0.5s linear both;
-  -o-animation: fadeInUp 0.5s linear both;
-  animation: fadeInUp 0.5s linear both; }
+  -webkit-animation: fadeInUp 0.3s linear both;
+  -moz-animation: fadeInUp 0.3s linear both;
+  -ms-animation: fadeInUp 0.3s linear both;
+  -o-animation: fadeInUp 0.3s linear both;
+  animation: fadeInUp 0.3s linear both; }
 
 @-webkit-keyframes fadeInUp {
   0% {
-    -webkit-transform: translateY(50px); }
+    -webkit-transform: translateY(0); }
   100% {
-    -webkit-transform: translateY(0); } }
+    -webkit-transform: translateY(-30px); } }
 
 @-moz-keyframes fadeInUp {
   0% {
-    -moz-transform: translateY(50px); }
+    -moz-transform: translateY(0); }
   100% {
-    -moz-transform: translateY(0); } }
+    -moz-transform: translateY(-30px); } }
 
 @keyframes fadeInUp {
   0% {
-    transform: translateY(50px); }
+    transform: translateY(0); }
   100% {
-    transform: translateY(0); } }
+    transform: translateY(-30px); } }

@@ -67,7 +67,6 @@
         <i></i>
       </div>
       
-      
       <p class="culture-p">企业理念/企业定位/企业使命/企业愿景</p>
       <ul class="culture-list">
         <li>

@@ -225,8 +225,8 @@
         <ul class="cpxx-ul clearfix">
           <li class="li1">
             <img src="@/img/solvecase/tianyu1.png" class="img1" alt="">
-            <img src="@/img/solvecase/blackbg1.png" class="img2" alt="">
-            <!-- <div class="showli">
+            <!-- <img src="@/img/solvecase/blackbg1.png" class="img2" alt=""> -->
+            <div class="showli">
               <h5>天宇1号</h5>
               <h6>LED路灯系统</h6>
               <p>与终端控制器实现远程控制及状态查询等；</p>
@@ -238,20 +238,11 @@
               <p>满足公共网络安全与室外作业；</p>
               <h6>智慧监控系统</h6>
               <p>满足常规道路监控与应急监控；</p>
-            </div> -->
+            </div>
           </li>
           <li class="li1">
             <img src="@/img/solvecase/tianyu2.png" class="img1" alt="">
-            <img src="@/img/solvecase/blackbg2.png" class="img2" alt="">
-            
-          </li>
-          <li class="li1">
-            <img src="@/img/solvecase/tianyu3.png" class="img1" alt="">
-            <img src="@/img/solvecase/blackbg3.png" class="img2" alt="">
-            
-          </li>
-           <!-- <li class="li2">
-           <div class="showli">
+            <div class="showli">
               <h5>天宇2号</h5>
               <h6>LED路灯系统</h6>
               <p>与终端控制器实现远程控制及状态查询等；</p>
@@ -266,9 +257,13 @@
               <h6>充电桩系统</h6>
               <p>为具备车载充电机的电动汽车提供电能；</p>
             </div>
-          </li> -->
-          <!--<li class="li3">
-             <div class="showli">
+            <!-- <img src="@/img/solvecase/blackbg2.png" class="img2" alt=""> -->
+            
+          </li>
+          <li class="li1">
+            <img src="@/img/solvecase/tianyu3.png" class="img1" alt="">
+            <!-- <img src="@/img/solvecase/blackbg3.png" class="img2" alt=""> -->
+            <div class="showli">
               <h5>天宇3号</h5>
               <h6>LED路灯系统</h6>
               <p>与终端控制器实现远程控制及状态查询等；</p>
@@ -283,9 +278,8 @@
               <h6>智慧广播音响系统</h6>
               <p>通过高质量音频信号的发布实现智慧广播；</p>
             </div>
-          </li> -->
+          </li>
         </ul>
-
       </section>
       <Gototop/>
     </section>

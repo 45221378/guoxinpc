@@ -14,10 +14,10 @@
     float: right;
     .active{
       a{
-        border-bottom:2px solid rgba(19,154,208,1);
+        border-bottom:2px solid #26baee;
         display: block;
         span{
-          color: #139AD0 !important;
+          color: #26baee !important;
           cursor: pointer;
         }
       }
@@ -63,7 +63,8 @@
           }
           &:hover{
             span{
-              color: #139AD0;
+              // color: #139AD0;
+              color: #26baee;
               cursor: pointer;
             }
           }
@@ -72,15 +73,13 @@
       }
       &:hover{
         .nav-item-a{
-          border-bottom:2px solid rgba(19,154,208,1);
+          border-bottom:2px solid #26baee;
           display: block;
           .header-title{
-            color: #139AD0;
+            color: #26baee;
           }
         }
     }
-    
-    
     }
     li:last-child{
       margin-right: 0px;

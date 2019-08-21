@@ -75,7 +75,7 @@
       <h5 class="margin112" @click="gonews">新闻资讯</h5>
       <section class="news clearfix">
           <div class="img-left">
-              <img src="@/img/index/city.png" alt="">
+              <img @click="gonews" src="@/img/index/city.png" alt="">
               <p class="img-p1">智慧路灯已经形成万亿级新兴产业，智慧城市建设开启新篇章</p>
               <p class="img-p2">截至2017年底，全国公路通车总里程达477.35万公里，是1978年的5.4倍，高速公路覆盖97%的20万以上人口……</p>
           </div>
@@ -114,9 +114,9 @@ export default {
             animate:false,
             intNum: undefined,
             arrItem:[
-                {img:require('@/img/index/banner.png')},
-                {img:require('@/img/banner-concatus.png')},
-                {img:require('@/img/banner-detail.png')},
+                {img:require('@/img/index/WechatIMG28.jpeg')},
+                {img:require('@/img/index/WechatIMG29.jpeg')},
+                {img:require('@/img/index/WechatIMG30.jpeg')},
                 ]
         }
     },

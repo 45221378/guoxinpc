@@ -36,6 +36,8 @@ export default {
                 loop: true,
                 loopedSlides: 3,
                 autoplay: true,
+                // autoplayDisableOnInteraction : false,
+                mousewheels: true,
                 on: {
                     progress: function(progress) {
                         for (let i = 0; i < this.slides.length; i++) {
@@ -65,7 +67,17 @@ export default {
                     }
                 }
             })
+
+            certifySwiper.el.onmouseover = function(){ //鼠标放上暂停轮播
+                certifySwiper.autoplay.stop();
+            }
+            certifySwiper.el.onmouseleave = function(){
+                certifySwiper.autoplay.start();
+            }
         })
+
+        
+
     },
     methods:{
         //项目案列的跳转
