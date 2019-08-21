@@ -72,7 +72,7 @@
             </li>
         </ul>
       </section>
-      <h5 class="margin112">新闻资讯</h5>
+      <h5 class="margin112" @click="gonews">新闻资讯</h5>
       <section class="news clearfix">
           <div class="img-left">
               <img src="@/img/index/city.png" alt="">
@@ -210,11 +210,15 @@ export default {
 
         //解决方案的跳转
         gozhzm(){
-            this.$router.push({path:'solvecase',query:{mId:'zhzm'}})
+            this.$router.push({name:'solvecase',params:{time:new Date().getTime()},query:{mId:'zhzm'}})
         },
         //项目案列的跳转
         goprojectcase(){
-            this.$router.push({path:'projectcase'})
+            this.$router.push({name:'projectcase',params:{time:new Date().getTime()}})
+        },
+        //新闻资讯
+        gonews(){
+			this.$router.push({name:'news',params:{time:new Date().getTime()},query:{mId:'gsxx'}})
         },
 
     },

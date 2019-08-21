@@ -273,16 +273,18 @@ export default {
   //点击查看详情，进行跳转
   methods:{
     gogsxx(){
-      this.$router.push({path:'news',query:{mId:'gsxx'}})
+      this.$router.push({name:'news',params:{time:new Date().getTime()},query:{mId:'gsxx'}})
     },
     gohyxx(){    
-      this.$router.push({path:'news',query:{mId:'hyxx'}})
+			this.$router.push({name:'news',params:{time:new Date().getTime()},query:{mId:'hyxx'}})
+
     },
     goNewsDetail(){
       this.$router.push({path:'newsdetail'})
     }
   }
 }
+
 </script>
 <style lang="scss" scoped>
    @import '../css/about.scss';
