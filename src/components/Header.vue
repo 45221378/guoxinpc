@@ -1,73 +1,71 @@
 <template>
   <div class="common-header clearfix">
-    	<div class="show-logo">
-            <img src="@/img/guoxinlogo.png" alt="">
-    	</div>
-    
-    	<ul class="navbar-nav clearfix">
-    		<li class="nav-item">
-    			<a @click="gohome"  class="nav-item-a">
-    				<span class="header-title">首页</span>
-    			</a>
-        </li>
-        <li class="nav-item ">
-    			<a  @click='goaboutus' class="nav-item-a">
-    				<span class="header-title">关于我们</span>
-          </a>
-          <ol class="show-links">
-    				<b class="show-arrow"></b>
-    				<li class="link-item">
-    						<span @click='goqyjs'>企业介绍</span>
-    				</li>
-    				<li class="link-item">
-    						<span @click='goqywh'>企业文化</span>
-    				</li>
-    			</ol>
-        </li>
-        <li class="nav-item ">
-    			<a  @click="gosolvecase" class="nav-item-a">
-    				<span class="header-title"> 解决方案</span>
-          </a>
-          <ol class="show-links">
-    				<b class="show-arrow"></b>
-    				<li class="link-item">
-    						<span @click="gozhzm">智慧照明综合管理平台</span>
-            </li>
-            <li class="link-item">
-                <span @click="gozhdg">智慧灯杆</span>
-            </li>
-            <li class="link-item">
-                <span @click="gocpxx">产品选型</span>
-            </li>
-          </ol>
-        </li>
-        <li class="nav-item ">
-          <a  @click="goprojectcase" class="nav-item-a">
-            <span class="header-title">项目案列</span>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a @click="gogsxx" class="nav-item-a">
-    				<span class="header-title">新闻动态</span>
-          </a>
-          <ol class="show-links">
-    				<b class="show-arrow"></b>
-    				<li class="link-item">
-    						<span @click="gogsxx">公司新闻</span>
-    				</li>
-    				<li class="link-item">
-    						<span @click="gohyxx">行业新闻</span>
-            </li>
-    			</ol>
-        </li>
-        <li class="nav-item ">
-    			<a  @click="gojoinus" class="nav-item-a">
-    				<span class="header-title">联系我们</span>
-    			</a>
-        </li>
-    	</ul>
-        
-    </div>
+		<div class="show-logo">
+					<img src="@/img/guoxinlogo.png" alt="">
+		</div>
+		<ul class="navbar-nav clearfix">
+			<li class="nav-item">
+				<a @click="gohome"  class="nav-item-a">
+					<span class="header-title">首页</span>
+				</a>
+			</li>
+			<li class="nav-item ">
+				<a  @click='goaboutus' class="nav-item-a">
+					<span class="header-title">关于我们</span>
+				</a>
+				<ol class="show-links">
+					<b class="show-arrow"></b>
+					<li class="link-item">
+							<span @click='goqyjs'>企业介绍</span>
+					</li>
+					<li class="link-item">
+							<span @click='goqywh'>企业文化</span>
+					</li>
+				</ol>
+			</li>
+			<li class="nav-item ">
+				<a  @click="gosolvecase" class="nav-item-a">
+					<span class="header-title"> 解决方案</span>
+				</a>
+				<ol class="show-links">
+					<b class="show-arrow"></b>
+					<li class="link-item">
+							<span @click="gozhzm">智慧照明综合管理平台</span>
+					</li>
+					<li class="link-item">
+							<span @click="gozhdg">智慧灯杆</span>
+					</li>
+					<li class="link-item">
+							<span @click="gocpxx">产品选型</span>
+					</li>
+				</ol>
+			</li>
+			<li class="nav-item ">
+				<a  @click="goprojectcase" class="nav-item-a">
+					<span class="header-title">项目案列</span>
+				</a>
+			</li>
+			<li class="nav-item ">
+				<a @click="gogsxx" class="nav-item-a">
+					<span class="header-title">新闻动态</span>
+				</a>
+				<ol class="show-links">
+					<b class="show-arrow"></b>
+					<li class="link-item">
+							<span @click="gogsxx">公司新闻</span>
+					</li>
+					<li class="link-item">
+							<span @click="gohyxx">行业新闻</span>
+					</li>
+				</ol>
+			</li>
+			<li class="nav-item ">
+				<a  @click="gojoinus" class="nav-item-a">
+					<span class="header-title">联系我们</span>
+				</a>
+			</li>
+		</ul>    
+  </div>
 </template>
 
 <style scoped lang="scss">

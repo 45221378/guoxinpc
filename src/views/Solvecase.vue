@@ -167,11 +167,12 @@
           </li>
         </ul>
         <div class="mbxg-img clearfix">
-            <img class="img1" src="@/img/solvecase/icon1.png" alt="">
+            <!-- <img class="img1" src="@/img/solvecase/icon1.png" alt="">
             <img class="img2" src="@/img/solvecase/icon2.png" alt="">
             <img class="img3" src="@/img/solvecase/icon3.png" alt="">
             <img class="img4" src="@/img/solvecase/icon4.png" alt="">
-            <img class="img5" src="@/img/solvecase/icon5.png" alt="">
+            <img class="img5" src="@/img/solvecase/icon5.png" alt=""> -->
+            <img class="img" src="@/img/solvecase/WechatIMG40.png" alt="">
         </div>
       </section>
       <section class="zhdg h5-title">
@@ -219,7 +220,7 @@
           <h5 class="colorwhite">产品选型</h5>
           <i class="bgwhite"></i>
         </div>
-        
+      
         <p class="cpxx-detail">通过应用先进、高效、可靠的电力线载波通信技术和无线GPRS/CDMA通信技术等，实现对路灯的远程集中控制与管理的路灯，包括单灯控制，PM2.5检测、天气情况、5G微基站，以及根据车流量自动调节亮度、远程照明控制、故障主动报警、灯具线缆防盗、远程抄表等功能，大幅节省电力资源，实现一杆多用。</p>
         <ul class="cpxx-ul clearfix">
           <li class="li1">

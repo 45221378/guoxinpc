@@ -22,9 +22,9 @@ export default {
     }
   },
   methods:{
-    cellBr(reglist){
-       return reglist.replace(/\,/g, '</br>')
-    },
+    // cellBr(reglist){
+    //    return reglist.replace(/\,/g, '</br>')
+    // },
     
     
     

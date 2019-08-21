@@ -200,14 +200,14 @@
       margin: 20px 0 116px 0;
     }
     &-list{
-      width: 1173px;
+      width: 1073px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       li{
        
-        width: 327px;
-        height: 396px;
+        // width: 327px;
+        // height: 396px;
         &:hover{
           
           .div-hover{
@@ -215,8 +215,8 @@
           }
         }
         .div-hover{ 
-          width: 327px;
-          height: 396px;
+          width: 269px;
+          height: 362px;
           background: url(../img/aboutus/bg-blue.png);
           background-repeat: no-repeat;
           background-size: 100% 100%;

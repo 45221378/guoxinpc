@@ -15,13 +15,16 @@
 <script>
   import Header from '@/components/Header.vue'
   import Footer from '@/components/Footer.vue'
-
+  // import $ from 'jquery'
   export default {
     // name: 'pc',
     components: {
       Header,
       Footer
-    }
+    },
+    // created(){
+    //   console.log($('#wrapper'));
+    // }
   }
 </script>
 

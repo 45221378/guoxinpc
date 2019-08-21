@@ -127,7 +127,6 @@ export default {
       Gototop
     },
     created(){
-        console.log("sssasaassa")
         // this.getNoticeData();
     },
     methods:{

@@ -286,11 +286,17 @@
     }
     &-img{
       width: 926px;
-      margin: -20px auto 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-left: 50px;
+      margin: 0 auto ;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: baseline;
+      padding-left: 40px;
+      .img{
+        margin-top: -50px;
+        width: 100%;
+        height: 100%;
+        margin-top: -70px;
+      }
       .img1{
         width: 93px;
         height: 93px;
